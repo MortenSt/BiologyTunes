@@ -15,17 +15,17 @@ async def scrape_suno():
         print(f"Navigating to {url}...")
         
         try:
-            # Increase timeout to 90 seconds for slow loads
-            await page.goto(url, wait_until="networkidle", timeout=90000)
+            # Change: We use "domcontentloaded" instead of "networkidle" (much faster)
+            await page.goto(url, wait_until="domcontentloaded", timeout=60000)
             
-            print("Waiting for song list to render...")
-            # Suno often uses a delay before showing public tracks
-            await page.wait_for_timeout(10000) 
-            
-            # Target the song links
+            print("Waiting for song elements to appear...")
+            # Specifically wait for the link pattern Suno uses for tracks
             selector = 'a[href*="/song/"]'
             await page.wait_for_selector(selector, timeout=30000)
             
+            # Give it a tiny bit of extra time to finish rendering text
+            await page.wait_for_timeout(3000)
+
             songs = await page.evaluate('''() => {
                 const links = Array.from(document.querySelectorAll('a[href*="/song/"]'));
                 return links.map(link => ({
@@ -34,23 +34,24 @@ async def scrape_suno():
                 })).filter(s => s.title.length > 1);
             }''')
             
-            if not songs:
-                print("Warning: Page loaded but no songs were found in the HTML.")
-                return
-
-            # Deduplicate
-            unique_songs = {s['url']: s for s in songs}.values()
-            song_list = list(unique_songs)
-            
-            with open('songs.json', 'w', encoding='utf-8') as f:
-                json.dump(song_list, f, indent=4, ensure_ascii=False)
-            
-            print(f"Success! Saved {len(song_list)} songs.")
+            if songs:
+                # Deduplicate
+                unique_songs = {s['url']: s for s in songs}.values()
+                song_list = list(unique_songs)
+                
+                with open('songs.json', 'w', encoding='utf-8') as f:
+                    json.dump(song_list, f, indent=4, ensure_ascii=False)
+                print(f"Success! Found {len(song_list)} songs.")
+            else:
+                print("No songs found. Creating an empty list to prevent Git error.")
+                with open('songs.json', 'w') as f:
+                    json.dump([], f)
 
         except Exception as e:
-            print(f"Error during scraping: {e}")
-            # We exit with 0 so the workflow doesn't 'fail' if Suno is just down
-            # but you can check logs to see why songs.json didn't update.
+            print(f"Scraper encountered an error: {e}")
+            # Ensure file exists so the workflow doesn't crash on 'git add'
+            with open('songs.json', 'w') as f:
+                json.dump([], f)
         
         finally:
             await browser.close()
