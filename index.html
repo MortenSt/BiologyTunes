@@ -5,33 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biology Tunes | Audio Gallery</title>
     <style>
-        :root { --accent: #ff0050; --bg: #050505; --card: #121212; }
-        body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: white; margin: 0; padding: 20px; }
-        header { text-align: center; padding: 40px 0; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
+        :root { --accent: #00d4ff; --bg: #0d1117; --card: #161b22; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: #c9d1d9; margin: 0; padding: 20px; }
+        header { text-align: center; padding: 50px 20px; background: linear-gradient(180deg, #161b22 0%, #0d1117 100%); border-bottom: 1px solid #30363d; margin-bottom: 40px; }
+        h1 { color: #f0f6fc; margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; max-width: 1300px; margin: 0 auto; }
         
         .song-card { 
-            background: var(--card); border-radius: 16px; overflow: hidden; 
-            border: 1px solid #222; transition: 0.3s; cursor: pointer;
+            background: var(--card); border-radius: 12px; overflow: hidden; 
+            border: 1px solid #30363d; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex; flex-direction: column;
         }
-        .song-card:hover { transform: translateY(-8px); border-color: var(--accent); }
+        .song-card:hover { transform: translateY(-5px); border-color: var(--accent); box-shadow: 0 10px 30px rgba(0,212,255,0.1); }
         
-        .cover-art { width: 100%; aspect-ratio: 1/1; object-fit: cover; background: #222; }
+        .cover-container { position: relative; width: 100%; aspect-ratio: 1/1; }
+        .cover-art { width: 100%; height: 100%; object-fit: cover; }
         
-        .card-content { padding: 15px; }
-        .card-content h3 { margin: 0 0 10px 0; font-size: 1rem; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .card-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .song-title { color: #f0f6fc; margin: 0 0 8px 0; font-size: 1.2rem; font-weight: 600; }
         
-        .player-container { margin-top: 15px; border-radius: 12px; overflow: hidden; height: 0; transition: 0.5s; }
-        .active .player-container { height: 150px; }
+        /* The player starts hidden and toggles on click */
+        .player-wrapper { height: 0; overflow: hidden; transition: height 0.4s ease; margin-top: 10px; }
+        .song-card.active .player-wrapper { height: 160px; }
 
-        .btn { display: inline-block; padding: 8px 16px; background: var(--accent); color: white; text-decoration: none; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+        .toggle-btn { 
+            background: #21262d; color: #58a6ff; border: 1px solid #30363d; 
+            padding: 8px 0; border-radius: 6px; width: 100%; cursor: pointer;
+            font-weight: 600; font-size: 0.85rem; transition: 0.2s;
+        }
+        .toggle-btn:hover { background: #30363d; border-color: #8b949e; }
+        .song-card.active .toggle-btn { background: var(--accent); color: #0d1117; border-color: var(--accent); }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Biology Tunes</h1>
-    <p>Scientific Concepts as Melodies</p>
+    <p>Exploring biological wonders through generative AI music</p>
 </header>
 
 <div id="song-grid" class="grid"></div>
@@ -42,18 +53,23 @@
         .then(data => {
             const container = document.getElementById('song-grid');
             container.innerHTML = data.map(song => `
-                <div class="song-card" onclick="this.classList.toggle('active')">
-                    <img src="${song.image}" class="cover-art" loading="lazy">
+                <div class="song-card" id="card-${song.id}">
+                    <div class="cover-container">
+                        <img src="${song.image}" class="cover-art" alt="${song.title}" loading="lazy">
+                    </div>
                     <div class="card-content">
-                        <h3>${song.title}</h3>
-                        <div class="player-container">
-                            <iframe src="https://suno.com/embed/${song.id}" width="100%" height="150px" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <h3 class="song-title">${song.title}</h3>
+                        <div class="player-wrapper">
+                            <iframe src="https://suno.com/embed/${song.id}" width="100%" height="150px" frameborder="0" allow="autoplay; encrypted-media; fullscreen" style="border-radius:8px;"></iframe>
                         </div>
-                        <p style="text-align:center; margin-top:10px;"><span class="btn">View Player</span></p>
+                        <button class="toggle-btn" onclick="document.getElementById('card-${song.id}').classList.toggle('active')">
+                            Toggle Player
+                        </button>
                     </div>
                 </div>
             `).join('');
-        });
+        })
+        .catch(err => console.error("Could not load songs:", err));
 </script>
 
 </body>
