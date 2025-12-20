@@ -1,8 +1,8 @@
 name: Sync Suno Songs
 on:
   schedule:
-    - cron: '0 12 * * *' # Runs every day at 12:00 UTC
-  workflow_dispatch: # Allows you to run it manually via the 'Actions' tab
+    - cron: '0 12 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -12,20 +12,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
+          
       - name: Install Scraper Tools
         run: |
           pip install playwright
           playwright install chromium
+          
       - name: Scrape Suno
         run: python scraper.py
-     - name: Commit and Push
+        
+      - name: Commit Updated Data
         run: |
           git config --global user.name "MortenSt"
           git config --global user.email "57128178+MortenSt@users.noreply.github.com"
           git add songs.json
-          git commit -m "Auto-sync: New songs from Suno" || exit 0
+          git commit -m "Auto-update: Synced songs from Suno" || echo "No changes to commit"
           git push
