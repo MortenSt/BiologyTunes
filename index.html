@@ -3,50 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biology Tunes | Audio Gallery</title>
+    <title>Biology Tunes | My Suno Portfolio</title>
     <style>
-    /* Replace the cover-art styles with these */
-    .cover-placeholder { 
-        width: 100%; 
-        aspect-ratio: 16/9; 
-        background: linear-gradient(45deg, #1e293b, #0f172a);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 3rem;
-    }
-    .song-card.active .cover-placeholder { display: none; } /* Hide icon when player is open */
+        :root { --accent: #00d4ff; --bg: #0d1117; --card: #161b22; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: #c9d1d9; margin: 0; padding: 20px; }
+        header { text-align: center; padding: 40px 0; border-bottom: 1px solid #30363d; margin-bottom: 30px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        
+        .song-card { 
+            background: var(--card); border-radius: 12px; border: 1px solid #30363d; 
+            transition: 0.2s ease; overflow: hidden;
+        }
+
+        /* Small header for the card with a DNA icon */
+        .card-header { 
+            padding: 15px; display: flex; align-items: center; justify-content: space-between;
+            cursor: pointer; background: rgba(255,255,255,0.03);
+        }
+        .card-header:hover { background: rgba(255,255,255,0.08); }
+        .song-title { margin: 0; font-size: 1rem; color: #f0f6fc; flex-grow: 1; padding-right: 10px; }
+        .dna-icon { font-size: 1.2rem; opacity: 0.7; }
+
+        /* Player area: hidden by default */
+        .player-wrapper { 
+            display: none; 
+            background: #000;
+            border-top: 1px solid #30363d;
+        }
+        
+        /* Show player when 'active' class is added */
+        .song-card.active .player-wrapper { display: block; }
+        .song-card.active { border-color: var(--accent); }
+
+        footer { text-align: center; margin-top: 50px; font-size: 0.8rem; opacity: 0.5; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Biology Tunes</h1>
-    <p>Exploring biological wonders through generative AI music</p>
+    <h1>Biology Tunes 🧬</h1>
+    <p>Automated collection of scientific tracks</p>
 </header>
 
 <div id="song-grid" class="grid"></div>
+
+<footer>
+    Synced daily from Suno via GitHub Actions
+</footer>
 
 <script>
     fetch('./songs.json')
         .then(res => res.json())
         .then(data => {
             const container = document.getElementById('song-grid');
+            // Sort by most recent (assuming they appear in order on Suno)
             container.innerHTML = data.map(song => `
                 <div class="song-card" id="card-${song.id}">
-                    <div class="cover-placeholder">🧬</div>
-                    <div class="card-content">
+                    <div class="card-header" onclick="togglePlayer('${song.id}')">
                         <h3 class="song-title">${song.title}</h3>
-                        <div class="player-wrapper">
-                            <iframe src="https://suno.com/embed/${song.id}" width="100%" height="160px" frameborder="0" allow="autoplay; encrypted-media; fullscreen" style="border-radius:8px;"></iframe>
-                        </div>
-                        <button class="toggle-btn" onclick="document.getElementById('card-${song.id}').classList.toggle('active')">
-                            Toggle Player
-                        </button>
+                        <span class="dna-icon">🧬</span>
+                    </div>
+                    <div class="player-wrapper">
+                        <iframe src="https://suno.com/embed/${song.id}" 
+                                width="100%" 
+                                height="150px" 
+                                frameborder="0" 
+                                allow="autoplay; encrypted-media; fullscreen"
+                                loading="lazy">
+                        </iframe>
                     </div>
                 </div>
             `).join('');
         });
+
+    function togglePlayer(id) {
+        // Toggle the clicked card
+        document.getElementById(`card-${id}`).classList.toggle('active');
+    }
 </script>
 
 </body>
