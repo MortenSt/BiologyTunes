@@ -3,85 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biology Tunes | My Suno Portfolio</title>
+    <title>Biology Tunes | Portfolio</title>
     <style>
         :root { --accent: #00d4ff; --bg: #0d1117; --card: #161b22; }
         body { font-family: 'Inter', sans-serif; background: var(--bg); color: #c9d1d9; margin: 0; padding: 20px; }
-        header { text-align: center; padding: 40px 0; border-bottom: 1px solid #30363d; margin-bottom: 30px; }
+        header { text-align: center; padding: 30px 0; }
+        
+        /* Filter Bar Styles */
+        .controls { max-width: 1200px; margin: 0 auto 30px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .filter-btn { 
+            background: #21262d; border: 1px solid #30363d; color: #c9d1d9; 
+            padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem;
+        }
+        .filter-btn.active { background: var(--accent); color: #0d1117; border-color: var(--accent); }
         
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .song-card { background: var(--card); border-radius: 12px; border: 1px solid #30363d; overflow: hidden; display: block; }
+        .song-card.hidden { display: none; }
         
-        .song-card { 
-            background: var(--card); border-radius: 12px; border: 1px solid #30363d; 
-            transition: 0.2s ease; overflow: hidden;
-        }
-
-        /* Small header for the card with a DNA icon */
-        .card-header { 
-            padding: 15px; display: flex; align-items: center; justify-content: space-between;
-            cursor: pointer; background: rgba(255,255,255,0.03);
-        }
-        .card-header:hover { background: rgba(255,255,255,0.08); }
-        .song-title { margin: 0; font-size: 1rem; color: #f0f6fc; flex-grow: 1; padding-right: 10px; }
-        .dna-icon { font-size: 1.2rem; opacity: 0.7; }
-
-        /* Player area: hidden by default */
-        .player-wrapper { 
-            display: none; 
-            background: #000;
-            border-top: 1px solid #30363d;
-        }
+        .card-header { padding: 15px; cursor: pointer; }
+        .tag { font-size: 0.6rem; padding: 2px 8px; border-radius: 10px; background: #30363d; margin-right: 5px; text-transform: uppercase; }
+        .tag-misc { background: #444; } /* Grayscale for oddities */
         
-        /* Show player when 'active' class is added */
-        .song-card.active .player-wrapper { display: block; }
-        .song-card.active { border-color: var(--accent); }
-
-        footer { text-align: center; margin-top: 50px; font-size: 0.8rem; opacity: 0.5; }
+        .player-wrapper { display: none; padding-bottom: 15px; }
+        .active .player-wrapper { display: block; }
+        .science-note { background: #07090c; padding: 15px; margin: 10px; border-radius: 8px; border-left: 3px solid var(--accent); font-size: 0.85rem; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Biology Tunes 🧬</h1>
-    <p>Automated collection of scientific tracks</p>
+    <div class="controls" id="filter-bar">
+        <button class="filter-btn active" onclick="filterSongs('All', this)">All</button>
+    </div>
 </header>
 
 <div id="song-grid" class="grid"></div>
 
-<footer>
-    Synced daily from Suno via GitHub Actions
-</footer>
-
 <script>
+    let allSongs = [];
+
     fetch('./songs.json')
         .then(res => res.json())
         .then(data => {
-            const container = document.getElementById('song-grid');
-            // Sort by most recent (assuming they appear in order on Suno)
-            container.innerHTML = data.map(song => `
-                <div class="song-card" id="card-${song.id}">
-                    <div class="card-header" onclick="togglePlayer('${song.id}')">
-                        <h3 class="song-title">${song.title}</h3>
-                        <span class="dna-icon">🧬</span>
-                    </div>
-                    <div class="player-wrapper">
-                        <iframe src="https://suno.com/embed/${song.id}" 
-                                width="100%" 
-                                height="150px" 
-                                frameborder="0" 
-                                allow="autoplay; encrypted-media; fullscreen"
-                                loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-            `).join('');
+            allSongs = data;
+            renderFilters(data);
+            renderSongs(data);
         });
 
-    function togglePlayer(id) {
-        // Toggle the clicked card
-        document.getElementById(`card-${id}`).classList.toggle('active');
+    function renderFilters(songs) {
+        const tags = new Set(['All']);
+        songs.forEach(s => s.tags.forEach(t => tags.add(t)));
+        const bar = document.getElementById('filter-bar');
+        bar.innerHTML = Array.from(tags).map(t => 
+            `<button class="filter-btn ${t==='All'?'active':''}" onclick="filterSongs('${t}', this)">${t}</button>`
+        ).join('');
+    }
+
+    function renderSongs(songs) {
+        const container = document.getElementById('song-grid');
+        container.innerHTML = songs.map(song => `
+            <div class="song-card" data-tags="${song.tags.join(',')}" id="card-${song.id}">
+                <div class="card-header" onclick="document.getElementById('card-${song.id}').classList.toggle('active')">
+                    <h3 style="margin:0; font-size:1rem;">${song.title}</h3>
+                    <div style="margin-top:8px;">
+                        ${song.tags.map(t => `<span class="tag tag-${t.toLowerCase().replace(' ','-')}">${t}</span>`).join('')}
+                    </div>
+                </div>
+                <div class="player-wrapper">
+                    <iframe src="https://suno.com/embed/${song.id}" width="100%" height="150px" frameborder="0"></iframe>
+                    ${song.caption ? `<div class="science-note">${song.caption}</div>` : ''}
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function filterSongs(tag, btn) {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cards = document.querySelectorAll('.song-card');
+        cards.forEach(card => {
+            const songTags = card.getAttribute('data-tags').split(',');
+            if (tag === 'All' || songTags.includes(tag)) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
     }
 </script>
-
 </body>
 </html>
