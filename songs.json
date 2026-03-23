@@ -80,6 +80,14 @@
         ]
     },
     {
+        "title": "Ten Percent",
+        "id": "2399fe42-4482-4578-bff0-d10d59df3756",
+        "caption": "No caption found.",
+        "tags": [
+            "Misc"
+        ]
+    },
+    {
         "title": "Forty-Seven Days",
         "id": "2c926ab4-ce99-4172-9790-05fb17c87cd8",
         "caption": "No caption found.",
@@ -220,15 +228,6 @@
         "id": "e682de90-5062-4942-abf4-d838256cf02a",
         "caption": "No caption found.",
         "tags": [
-            "Zoology"
-        ]
-    },
-    {
-        "title": "The Quantum Green (Photosynthesis Song)",
-        "id": "ed451df7-d4b9-4512-9f29-26d671249efa",
-        "caption": "No caption found.",
-        "tags": [
-            "Biochemistry",
             "Zoology"
         ]
     }
