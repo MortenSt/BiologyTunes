@@ -1,85 +1,5 @@
 [
     {
-        "title": "Basic Training",
-        "id": "44a130f1-dd69-480f-801b-039fff6a7042",
-        "caption": "No caption found.",
-        "tags": [
-            "Misc"
-        ]
-    },
-    {
-        "title": "300 Million to One (The Great Haploid Migration)",
-        "id": "5a0ce5cd-d8f0-4741-ba4b-042c126f7108",
-        "caption": "No caption found.",
-        "tags": [
-            "Cell Biology"
-        ]
-    },
-    {
-        "title": "The Coffin Fly: The Navigator of the Grave",
-        "id": "06c91d25-1992-4eb0-8982-0c6d599a1518",
-        "caption": "No caption found.",
-        "tags": [
-            "Zoology"
-        ]
-    },
-    {
-        "title": "The Third Domain (Woese's Quest)",
-        "id": "d6bb249d-ad05-44ea-8f61-56b0f5e5ca89",
-        "caption": "No caption found.",
-        "tags": [
-            "Evolution"
-        ]
-    },
-    {
-        "title": "Sexton Beetle song",
-        "id": "85aa93f4-6bb2-4749-be92-515b38cc96a9",
-        "caption": "No caption found.",
-        "tags": [
-            "Zoology"
-        ]
-    },
-    {
-        "title": "I am the very model of a modern molecular biologist V1",
-        "id": "eb33dc4a-5475-4283-9138-00b14daf7069",
-        "caption": "No caption found.",
-        "tags": [
-            "Misc"
-        ]
-    },
-    {
-        "title": "Evidence (Remix)",
-        "id": "f1999d00-ba43-4672-a7b3-7b5bfef338d5",
-        "caption": "No caption found.",
-        "tags": [
-            "Misc"
-        ]
-    },
-    {
-        "title": "The Paradox of Porn",
-        "id": "43b05f5a-64e4-4e2d-9e28-b1517e4332b4",
-        "caption": "No caption found.",
-        "tags": [
-            "Misc"
-        ]
-    },
-    {
-        "title": "Hammerhead Ribozyme Rock",
-        "id": "760b16db-59ea-48a6-9ce7-85a6e6878ff1",
-        "caption": "No caption found.",
-        "tags": [
-            "Genetics"
-        ]
-    },
-    {
-        "title": "If I was God ...(I'd redesign)",
-        "id": "829b033c-abcd-4c49-abc0-dabb69009047",
-        "caption": "No caption found.",
-        "tags": [
-            "Misc"
-        ]
-    },
-    {
         "title": "Scissors from the Stars (Alternative 2)",
         "id": "5f07e043-3424-4ca3-806c-0b03efab18e0",
         "caption": "No caption found.",
@@ -106,6 +26,14 @@
     {
         "title": "The Silent Factory",
         "id": "0a446053-1063-4864-923b-b127a9514ef3",
+        "caption": "No caption found.",
+        "tags": [
+            "Misc"
+        ]
+    },
+    {
+        "title": "Basic Training",
+        "id": "44a130f1-dd69-480f-801b-039fff6a7042",
         "caption": "No caption found.",
         "tags": [
             "Misc"
@@ -181,6 +109,14 @@
         "caption": "No caption found.",
         "tags": [
             "Misc"
+        ]
+    },
+    {
+        "title": "300 Million to One (The Great Haploid Migration)",
+        "id": "5a0ce5cd-d8f0-4741-ba4b-042c126f7108",
+        "caption": "No caption found.",
+        "tags": [
+            "Cell Biology"
         ]
     },
     {
