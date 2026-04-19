@@ -1,0 +1,114 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #7f8c8d;
+    font-size: 1.2em;
+}
+
+.song-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.song-card h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.song-info {
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.links a {
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.suno-link {
+    background: #3498db;
+    color: white;
+}
+
+.spotify-link {
+    background: #1db954;
+    color: white;
+}
+
+.blog-content {
+    line-height: 1.8;
+}
+
+.blog-content p {
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    header {
+        padding: 20px 0;
+    }
+    
+    .song-card {
+        padding: 15px;
+    }
+}
