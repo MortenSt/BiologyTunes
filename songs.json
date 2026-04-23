@@ -1,5 +1,13 @@
 [
     {
+        "title": "Guts for Glory (The Eviscerator's Hymn)",
+        "id": "712bfe38-9518-4a7f-93be-1a2a840c0d24",
+        "caption": "No caption found.",
+        "tags": [
+            "Misc"
+        ]
+    },
+    {
         "title": "The Compass Inside",
         "id": "a644b8eb-5080-4ee6-a33e-af75b90d2455",
         "caption": "No caption found.",
@@ -146,14 +154,6 @@
     {
         "title": "Hallowed Be Thy Gamete (Ovum opera)",
         "id": "852c8d36-694b-499a-83a5-a603ce927626",
-        "caption": "No caption found.",
-        "tags": [
-            "Cell Biology"
-        ]
-    },
-    {
-        "title": "Vesicle Voyage",
-        "id": "d46a9e41-8ea6-4d47-8b45-eccd566a6114",
         "caption": "No caption found.",
         "tags": [
             "Cell Biology"
