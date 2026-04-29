@@ -1,5 +1,13 @@
 [
     {
+        "title": "The Hox Code (We All Read the Same Letters)",
+        "id": "0c4dc8f0-8f06-4489-bfba-eb3d9735798c",
+        "caption": "No caption found.",
+        "tags": [
+            "Misc"
+        ]
+    },
+    {
         "title": "Guts for Glory (The Eviscerator's Hymn)",
         "id": "712bfe38-9518-4a7f-93be-1a2a840c0d24",
         "caption": "No caption found.",
@@ -149,14 +157,6 @@
         "caption": "No caption found.",
         "tags": [
             "Misc"
-        ]
-    },
-    {
-        "title": "Hallowed Be Thy Gamete (Ovum opera)",
-        "id": "852c8d36-694b-499a-83a5-a603ce927626",
-        "caption": "No caption found.",
-        "tags": [
-            "Cell Biology"
         ]
     }
 ]
