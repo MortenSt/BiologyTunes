@@ -1,5 +1,13 @@
 [
     {
+        "title": "The Body of a Fly",
+        "id": "39045695-0dac-4bc9-bd5a-22c508488250",
+        "caption": "No caption found.",
+        "tags": [
+            "Zoology"
+        ]
+    },
+    {
         "title": "The Order We Were Built",
         "id": "c0e376ea-1dae-485e-b3ed-48290dac4aa6",
         "caption": "No caption found.",
@@ -146,14 +154,6 @@
     {
         "title": "The Silent Factory",
         "id": "0a446053-1063-4864-923b-b127a9514ef3",
-        "caption": "No caption found.",
-        "tags": [
-            "Misc"
-        ]
-    },
-    {
-        "title": "Basic Training",
-        "id": "44a130f1-dd69-480f-801b-039fff6a7042",
         "caption": "No caption found.",
         "tags": [
             "Misc"
