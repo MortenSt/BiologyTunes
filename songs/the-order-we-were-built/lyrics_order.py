@@ -120,5 +120,8 @@ def load():
     return secs, lines, cfg["end"]
 
 
-SECS, LINES, END = load()
-BEATS = json.load(open(os.path.join(HERE, "beats.json")))
+# tidsplan og taktslag trengs bare av videoskriptet (align_lyrics.py klarer seg uten)
+if os.path.exists(os.path.join(HERE, "timing.json")):
+    SECS, LINES, END = load()
+if os.path.exists(os.path.join(HERE, "beats.json")):
+    BEATS = json.load(open(os.path.join(HERE, "beats.json")))
