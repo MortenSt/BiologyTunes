@@ -25,10 +25,12 @@ Cellular respiration, told in the order it evolved, and sung by ATP synthase, th
 • Lyric timing: word-level timestamps from forced alignment with stable-ts (OpenAI Whisper), after isolating the vocals with Demucs
 • Animation: every frame was drawn in code. Claude Code wrote a Python script using the Cairo graphics library. No stock footage or images were used. Each scene is driven by the lyric timings, so the visuals change with the words.
 
-🎧 LISTEN & FOLLOW
+🎧 LISTEN TO THIS SONG
+Suno: https://suno.com/song/c0e376ea-1dae-485e-b3ed-48290dac4aa6
+
+🎶 MORE BIOLOGYTUNES MUSIC
 Spotify: https://open.spotify.com/artist/4e417d13AlxUoCRIRWG5VB
 YouTube (music releases): https://www.youtube.com/channel/UC8p57et4WQcKdKowKiCg3KA
 Suno: https://suno.com/@biology_tunes
-This song on Suno: https://suno.com/song/c0e376ea-1dae-485e-b3ed-48290dac4aa6
 
 #biology #cellularrespiration #ATPsynthase #evolution #scienceSong #biochemistry #mitochondria #originoflife
