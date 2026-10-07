@@ -384,7 +384,7 @@ def outro_scene(ctx, t, u):
     rgba(ctx, (0.10, 0.12, 0.25), 0.6); ctx.rectangle(0, 0, W, 200); ctx.fill()
     membrane(ctx, 200)
     atp_synthase(ctx, 760, 200, 1.2, t / (1.6 + 0.15 * u) * TAU, t=t)
-    a = smooth((u - 4) / 2)
+    a = smooth((t - 322) / 3)
     text(ctx, "The Order We Were Built", 640, 110, 52, C["white"], a, bold=True, font=LYRIC_FONT)
     text(ctx, "BiologyTunes", 640, 150, 22, C["hl"], a, bold=True)
 
@@ -407,7 +407,7 @@ def lyric_panel(ctx, t, sec):
     rgba(ctx, C["hl"], 0.8); ctx.rectangle(0, H - 4, W * t / END, 4); ctx.fill()
     cur = None
     for i, l in enumerate(LINES):
-        if l["t0"] - 0.3 <= t < l["t1"] - 0.3:
+        if l["t0"] - 0.3 <= t < l["t1"] + 0.4:
             cur = i
     if cur is None:
         nxt = next((l for l in LINES if 0 < l["t0"] - t < 3.0), None)
@@ -463,12 +463,17 @@ def render(t):
     elif k == "bridge":
         bridge_scene(ctx, t, u, sec)
     else:
-        outro_scene(ctx, t, u)
+        # outro: motoren snurrer → instrumental coda med alle lagene → motoren + tittel
+        a_mid = smooth((t - 279) / 2.5) * (1 - smooth((t - 318) / 2.5))
+        if a_mid < 1:
+            outro_scene(ctx, t, u)
+        if a_mid > 0:
+            ctx.push_group(); strata_scene(ctx, t, t - 279, sec, final=True); ctx.pop_group_to_source(); ctx.paint_with_alpha(a_mid)
     for s in SECS[1:]:
         d = t - s["t0"]
         if -0.3 < d < 0.3 and s["key"] != "verse1":
             rgba(ctx, (0, 0, 0), 0.7 * (1 - abs(d) / 0.3)); ctx.paint()
-    if (k != "intro" or u > 11) and not (k == "outro" and u > 3):
+    if (k != "intro" or u > 11) and not (k == "outro" and t > 279):
         fact_card(ctx, sec, t)
     lyric_panel(ctx, t, sec)
     if t < 1.0:

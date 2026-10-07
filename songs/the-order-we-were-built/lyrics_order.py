@@ -96,8 +96,13 @@ def load():
     for i, s in enumerate(sl):
         end = sl[i + 1]["start"] if i + 1 < len(sl) else cfg["end"]
         label, era, lyr, fact = SECTIONS[s["key"]]
-        v0, v1 = s["vocal"]
-        if "line_starts" in s:
+        if "lines" in s:
+            spans = s["lines"]
+        else:
+            v0, v1 = s["vocal"]
+        if "lines" in s:
+            pass
+        elif "line_starts" in s:
             starts = s["line_starts"] + [v1]
         else:
             w = [n_syll(l) + 3 for l in lyr]
@@ -105,9 +110,11 @@ def load():
             for x in w:
                 starts.append(v0 + (v1 - v0) * acc / tot); acc += x
             starts.append(v1)
+        if "lines" not in s:
+            spans = [(starts[k], starts[k + 1]) for k in range(len(lyr))]
         sec = dict(key=s["key"], label=label, era=era, fact=fact, t0=s["start"], t1=end, lines=[])
         for k, text in enumerate(lyr):
-            ln = dict(text=text, t0=starts[k], t1=starts[k + 1], section=s["key"], idx=k)
+            ln = dict(text=text, t0=spans[k][0], t1=spans[k][1], section=s["key"], idx=k)
             sec["lines"].append(ln); lines.append(ln)
         secs.append(sec)
     return secs, lines, cfg["end"]
