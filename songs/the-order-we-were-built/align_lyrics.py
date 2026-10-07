@@ -9,6 +9,7 @@ Det er mye mer presist på sang enn fri transkripsjon. Skriver:
   - words.json   (tidskode for hvert ord)
 """
 import json
+import os
 import re
 import sys
 
@@ -26,15 +27,21 @@ def norm(w):
 
 
 lines = [(key, text.replace("₂", "2")) for key in ORDER for text in SECTIONS[key][2]]
-model = stable_whisper.load_model(model_name)
-kwargs = dict(language="en")
-try:
-    import demucs  # noqa: F401
-    kwargs["denoiser"] = "demucs"   # skiller ut vokalen før justering
-    print("Bruker demucs for å isolere vokalen")
-except ImportError:
-    pass
-result = model.align(audio, "\n".join(t for _, t in lines), **kwargs)
+CACHE = "alignment.json"   # lagres så en ny kjøring slipper å justere på nytt (~8 min)
+if os.path.exists(CACHE):
+    print("Bruker lagret justering fra", CACHE)
+    result = stable_whisper.WhisperResult(CACHE)
+else:
+    model = stable_whisper.load_model(model_name)
+    kwargs = dict(language="en")
+    try:
+        import demucs  # noqa: F401
+        kwargs["denoiser"] = "demucs"   # skiller ut vokalen før justering
+        print("Bruker demucs for å isolere vokalen")
+    except ImportError:
+        pass
+    result = model.align(audio, "\n".join(t for _, t in lines), **kwargs)
+    result.save_as_json(CACHE)
 words = [w for w in result.all_words() if norm(w.word)]
 
 # fordel ordene tilbake på linjene i rekkefølge
@@ -62,7 +69,10 @@ for s in timing["sections"]:
     s["start"] = 0.0 if s["key"] == "intro" else round(max(prev_end, first - 1.0), 2)
     prev_end = s["lines"][-1][1]
 
-json.dump(timing, open("timing.json", "w"), indent=1, ensure_ascii=False)
-json.dump(out_words, open("words.json", "w"), indent=1, ensure_ascii=False)
+# utf-8 eksplisitt: Windows bruker ellers cp1252, som ikke kan skrive «₂»
+with open("timing.json", "w", encoding="utf-8") as f:
+    json.dump(timing, f, indent=1, ensure_ascii=False)
+with open("words.json", "w", encoding="utf-8") as f:
+    json.dump(out_words, f, indent=1, ensure_ascii=False)
 result.to_srt_vtt("lyrics.srt")
 print("Ferdig: timing.json, words.json og lyrics.srt")
