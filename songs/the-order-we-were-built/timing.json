@@ -1,0 +1,15 @@
+{
+  "_note": "Tider i sekunder. start = når delen begynner, vocal = [første, siste] sekund med sang. Linjene fordeles jevnt (vektet etter antall stavelser) innenfor 'vocal'. Legg til \"line_starts\": [..] for å angi hver linje presist.",
+  "end": 343.5,
+  "sections": [
+    {"key": "intro",   "start": 0.0,   "vocal": [12.5, 36.0]},
+    {"key": "verse1",  "start": 37.0,  "vocal": [49.0, 95.0]},
+    {"key": "chorus1", "start": 95.0,  "vocal": [95.5, 139.0]},
+    {"key": "verse2",  "start": 139.0, "vocal": [150.0, 194.0]},
+    {"key": "chorus2", "start": 194.0, "vocal": [195.0, 217.0]},
+    {"key": "verse3",  "start": 217.0, "vocal": [218.0, 261.0]},
+    {"key": "bridge",  "start": 261.0, "vocal": [262.0, 287.0]},
+    {"key": "final",   "start": 287.0, "vocal": [287.5, 325.0]},
+    {"key": "outro",   "start": 325.0, "vocal": [326.0, 340.0]}
+  ]
+}
