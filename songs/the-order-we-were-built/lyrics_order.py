@@ -33,8 +33,8 @@ SECTIONS = {
         "I drank the difference between sea and pore.",
         "The engine was here before the fire,",
         "the current older than the first desire.",
-    ], "ATP synthase is a molecular turbine: protons crossing a membrane spin its rotor to make ATP. "
-       "Early life may have used free geochemical gradients before it could pump its own."),
+    ], "Before any enzymes, the natural proton gradient across thin FeS mineral walls may have driven "
+       "chemistry directly (e.g. CO₂ + H₂ → organics). ATP synthase evolved later, yet was already in LUCA."),
     "chorus1": ("Chorus", "Layer on layer", CHORUS,
                 "The hook is the syllabus: proton gradient → glycolysis (the ancient core) → "
                 "the Krebs wheel → oxygen breathing — in the order they evolved."),

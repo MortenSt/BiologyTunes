@@ -7,7 +7,7 @@ Celleånding fortalt i den rekkefølgen den oppsto, sunget av ATP-syntase (Suno-
 | Del | Animasjon |
 |---|---|
 | Intro | Alkaliske hydrotermale skorsteiner på havbunnen |
-| Vers 1 – The Vent | Mineralvegg med alkalisk væske mot surt hav; ATP-syntase som turbin |
+| Vers 1 – The Vent | Mineralvegg med alkalisk væske mot surt hav; gradienten driver kjemi ved FeS-klynger (CO₂ + H₂ → organiske stoffer). ATP-syntase vises bare som et «spøkelse» av det som kom senere |
 | Refreng | Jordlag: protongradient → glykolyse → Krebs-hjulet → ånding (O₂) |
 | Vers 2 | Glukose (6 C) → 2 pyruvat (3 C), netto 2 ATP, uten oksygen |
 | Vers 3 | Krebs-syklusen baklengs (binder CO₂) og deretter forlengs (brenner) |

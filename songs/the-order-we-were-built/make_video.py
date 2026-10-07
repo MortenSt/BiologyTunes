@@ -130,21 +130,51 @@ def wall_scene(ctx, t, u):
     for k in range(60):
         rgba(ctx, (0.2 + 0.2 * PTS[k, 2], 0.17, 0.12), 0.9)
         ctx.arc(wx - 30 + PTS[k, 0] * 60, PTS[k, 1] * PANEL_Y, 3 + 5 * PTS[k + 1, 2], 0, TAU); ctx.fill()
-    text(ctx, "alkaline vent fluid", 220, 470, 22, (0.6, 0.8, 1.0), 0.9, bold=True)
-    text(ctx, "pH ≈ 10", 220, 500, 18, (0.6, 0.8, 1.0), 0.8)
+    text(ctx, "alkaline vent fluid", 150, 522, 20, (0.6, 0.8, 1.0), 0.9, bold=True)
+    text(ctx, "pH ≈ 10", 150, 546, 16, (0.6, 0.8, 1.0), 0.8)
     text(ctx, "acidic ocean", 1080, 470, 22, (1.0, 0.65, 0.45), 0.9, bold=True)
     text(ctx, "pH ≈ 6  ·  many H⁺", 1080, 500, 18, (1.0, 0.65, 0.45), 0.8)
     for k in range(45):
         px = wx + 60 + PTS[k, 0] * (W - wx - 80) + 6 * math.sin(t * 1.5 + k)
         py = 30 + PTS[k, 1] * 400 + 6 * math.cos(t * 1.3 + k)
         proton(ctx, px, py, 0.85, 9)
-    # turbinen (ATP-syntase) satt inn i veggen, dreid 90°
-    ang = t / 1.6 * TAU
-    ctx.save(); ctx.translate(wx, 270); ctx.rotate(math.pi / 2)
-    atp_synthase(ctx, 0, 0, 1.0, ang, t=t)
-    ctx.restore()
+    # Ingen enzymer ennå: protoner siver gjennom porer i veggen, og FeS-klynger på
+    # den alkaliske siden katalyserer CO₂ + H₂ → organiske molekyler.
+    pores = (110, 230, 350, 470)
+    for py in pores:
+        rgba(ctx, (0.05, 0.08, 0.14), 0.9); rrect(ctx, wx - 34, py - 9, 68, 18, 9); ctx.fill()
+        p = (t * 0.6 + py * 0.01) % 1.0
+        proton(ctx, lerp(wx + 34, wx - 34, p), py, math.sin(p * math.pi), 8)
+        # FeS-klynge (kubanstruktur) der poren munner ut
+        cx, cy = wx - 62, py
+        for j, (dx, dy) in enumerate(((-9, -9), (9, -9), (-9, 9), (9, 9))):
+            col = (0.75, 0.35, 0.20) if j in (0, 3) else (0.95, 0.85, 0.25)
+            rgba(ctx, col); ctx.arc(cx + dx, cy + dy, 7, 0, TAU); ctx.fill()
+        glow(ctx, cx, cy, 34, (1.0, 0.8, 0.3), 0.25 + 0.25 * pulse(t))
+        # produkter («organics») som driver ut i den alkaliske væsken
+        q = (t * 0.35 + py * 0.013) % 1.0
+        ox, oy = cx - 30 - 160 * q, cy + 25 * math.sin(q * 5 + py)
+        rgba(ctx, (0.6, 1.0, 0.7), 0.9 * (1 - q)); ctx.arc(ox, oy, 6, 0, TAU); ctx.fill()
+        ctx.arc(ox - 11, oy + 5, 4, 0, TAU); ctx.fill()
+    for k in range(10):   # H₂ fra ventilvæsken
+        p = (t * 0.2 + PTS[k, 2]) % 1.0
+        hx = 80 + PTS[k, 0] * 420; hy = lerp(540, 60, p)
+        rgba(ctx, (0.85, 0.95, 1), 0.6 * (1 - p)); ctx.arc(hx - 4, hy, 5, 0, TAU); ctx.fill(); ctx.arc(hx + 4, hy, 5, 0, TAU); ctx.fill()
+    text(ctx, "H₂", 300, 120, 16, (0.85, 0.95, 1), 0.7)
+    text(ctx, "FeS mineral catalysts", wx - 62, 30, 15, (1, 0.85, 0.4), 0.85, align="right", bold=True)
     if u > 2:
-        badge(ctx, "protons fall downhill → the turbine turns", 940, 560 - 36, smooth((u - 2) / 1), C["hl"], 18)
+        badge(ctx, "the gradient drives chemistry: CO₂ + H₂ → organics", 940, 524, smooth((u - 2) / 1), C["hl"], 17)
+    # «The engine was here before the fire»: et spøkelse av den fremtidige motoren
+    lines = next(s for s in SECS if s["key"] == "verse1")["lines"]
+    ga = smooth((t - lines[6]["t0"]) / 1.5)
+    if ga > 0:
+        ctx.save(); ctx.translate(430, 280)
+        ctx.push_group()
+        membrane(ctx, 0, -130, 130)
+        atp_synthase(ctx, 0, 0, 0.6, t / 1.6 * TAU, show_flux=False)
+        ctx.pop_group_to_source(); ctx.paint_with_alpha(0.35 * ga)
+        ctx.restore()
+        badge(ctx, "later: ATP synthase evolves to tap the same gradient", 395, 478, ga, (0.8, 0.85, 1.0), 16)
 
 
 LAYERS = [("Breath  (O₂)", "≈ 2.4 Ga", (0.30, 0.55, 0.85)),
