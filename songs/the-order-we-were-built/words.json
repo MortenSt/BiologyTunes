@@ -1,0 +1,2552 @@
+[
+ {
+  "line": "Before the code, before the cell,",
+  "words": [
+   {
+    "w": "Before",
+    "start": 12.88,
+    "end": 12.9
+   },
+   {
+    "w": "the",
+    "start": 12.9,
+    "end": 13.34
+   },
+   {
+    "w": "code,",
+    "start": 13.34,
+    "end": 13.92
+   },
+   {
+    "w": "before",
+    "start": 14.62,
+    "end": 14.62
+   },
+   {
+    "w": "the",
+    "start": 14.62,
+    "end": 15.04
+   },
+   {
+    "w": "cell,",
+    "start": 15.04,
+    "end": 15.58
+   }
+  ]
+ },
+ {
+  "line": "before the first thing learned to swell —",
+  "words": [
+   {
+    "w": "before",
+    "start": 18.7,
+    "end": 18.92
+   },
+   {
+    "w": "the",
+    "start": 18.92,
+    "end": 19.32
+   },
+   {
+    "w": "first",
+    "start": 19.32,
+    "end": 19.68
+   },
+   {
+    "w": "thing",
+    "start": 19.68,
+    "end": 20.12
+   },
+   {
+    "w": "learned",
+    "start": 20.12,
+    "end": 20.74
+   },
+   {
+    "w": "to",
+    "start": 20.74,
+    "end": 21.4
+   },
+   {
+    "w": "swell",
+    "start": 21.4,
+    "end": 21.76
+   }
+  ]
+ },
+ {
+  "line": "there was a rock, there was a tide,",
+  "words": [
+   {
+    "w": "there",
+    "start": 24.66,
+    "end": 24.76
+   },
+   {
+    "w": "was",
+    "start": 24.76,
+    "end": 24.98
+   },
+   {
+    "w": "a",
+    "start": 24.98,
+    "end": 25.2
+   },
+   {
+    "w": "rock,",
+    "start": 25.2,
+    "end": 25.44
+   },
+   {
+    "w": "there",
+    "start": 26.66,
+    "end": 26.78
+   },
+   {
+    "w": "was",
+    "start": 26.78,
+    "end": 26.96
+   },
+   {
+    "w": "a",
+    "start": 26.96,
+    "end": 27.18
+   },
+   {
+    "w": "tide,",
+    "start": 27.18,
+    "end": 27.68
+   }
+  ]
+ },
+ {
+  "line": "and a current running deep inside.",
+  "words": [
+   {
+    "w": "and",
+    "start": 30.94,
+    "end": 31.06
+   },
+   {
+    "w": "a",
+    "start": 31.06,
+    "end": 31.28
+   },
+   {
+    "w": "current",
+    "start": 31.28,
+    "end": 31.62
+   },
+   {
+    "w": "running",
+    "start": 31.62,
+    "end": 32.24
+   },
+   {
+    "w": "deep",
+    "start": 32.24,
+    "end": 33.04
+   },
+   {
+    "w": "inside.",
+    "start": 33.04,
+    "end": 34.46
+   }
+  ]
+ },
+ {
+  "line": "I am the wheel in the alkaline dark,",
+  "words": [
+   {
+    "w": "I",
+    "start": 49.12,
+    "end": 49.12
+   },
+   {
+    "w": "am",
+    "start": 49.12,
+    "end": 49.44
+   },
+   {
+    "w": "the",
+    "start": 49.44,
+    "end": 49.78
+   },
+   {
+    "w": "wheel",
+    "start": 49.78,
+    "end": 50.1
+   },
+   {
+    "w": "in",
+    "start": 50.1,
+    "end": 50.56
+   },
+   {
+    "w": "the",
+    "start": 50.56,
+    "end": 50.76
+   },
+   {
+    "w": "alkaline",
+    "start": 50.76,
+    "end": 51.88
+   },
+   {
+    "w": "dark,",
+    "start": 51.88,
+    "end": 52.73
+   }
+  ]
+ },
+ {
+  "line": "a turbine turning on a sunless spark.",
+  "words": [
+   {
+    "w": "a",
+    "start": 55.34,
+    "end": 55.44
+   },
+   {
+    "w": "turbine",
+    "start": 55.44,
+    "end": 55.86
+   },
+   {
+    "w": "turning",
+    "start": 55.86,
+    "end": 56.88
+   },
+   {
+    "w": "on",
+    "start": 56.88,
+    "end": 57.54
+   },
+   {
+    "w": "a",
+    "start": 57.54,
+    "end": 57.9
+   },
+   {
+    "w": "sunless",
+    "start": 57.9,
+    "end": 58.62
+   },
+   {
+    "w": "spark.",
+    "start": 58.62,
+    "end": 60.27
+   }
+  ]
+ },
+ {
+  "line": "No sun reached down, no breath, no name —",
+  "words": [
+   {
+    "w": "No",
+    "start": 61.56,
+    "end": 61.74
+   },
+   {
+    "w": "sun",
+    "start": 61.74,
+    "end": 62.16
+   },
+   {
+    "w": "reached",
+    "start": 62.16,
+    "end": 62.58
+   },
+   {
+    "w": "down,",
+    "start": 62.58,
+    "end": 63.22
+   },
+   {
+    "w": "no",
+    "start": 63.38,
+    "end": 63.42
+   },
+   {
+    "w": "breath,",
+    "start": 63.42,
+    "end": 64.0
+   },
+   {
+    "w": "no",
+    "start": 64.04,
+    "end": 64.24
+   },
+   {
+    "w": "name",
+    "start": 64.24,
+    "end": 64.76
+   }
+  ]
+ },
+ {
+  "line": "just protons falling, and I caught the flame.",
+  "words": [
+   {
+    "w": "just",
+    "start": 68.0,
+    "end": 68.24
+   },
+   {
+    "w": "protons",
+    "start": 68.24,
+    "end": 68.78
+   },
+   {
+    "w": "falling,",
+    "start": 68.78,
+    "end": 70.06
+   },
+   {
+    "w": "and",
+    "start": 70.36,
+    "end": 70.36
+   },
+   {
+    "w": "I",
+    "start": 70.36,
+    "end": 70.64
+   },
+   {
+    "w": "caught",
+    "start": 70.64,
+    "end": 71.1
+   },
+   {
+    "w": "the",
+    "start": 71.1,
+    "end": 71.5
+   },
+   {
+    "w": "flame.",
+    "start": 72.22,
+    "end": 72.94
+   }
+  ]
+ },
+ {
+  "line": "The vent made the gradient, the rock made the door,",
+  "words": [
+   {
+    "w": "The",
+    "start": 74.46,
+    "end": 74.84
+   },
+   {
+    "w": "vent",
+    "start": 74.84,
+    "end": 75.12
+   },
+   {
+    "w": "made",
+    "start": 75.12,
+    "end": 75.48
+   },
+   {
+    "w": "the",
+    "start": 75.48,
+    "end": 75.66
+   },
+   {
+    "w": "gradient,",
+    "start": 75.66,
+    "end": 76.56
+   },
+   {
+    "w": "the",
+    "start": 76.56,
+    "end": 76.58
+   },
+   {
+    "w": "rock",
+    "start": 76.58,
+    "end": 76.78
+   },
+   {
+    "w": "made",
+    "start": 76.78,
+    "end": 77.08
+   },
+   {
+    "w": "the",
+    "start": 77.08,
+    "end": 77.24
+   },
+   {
+    "w": "door,",
+    "start": 77.24,
+    "end": 77.74
+   }
+  ]
+ },
+ {
+  "line": "I drank the difference between sea and pore.",
+  "words": [
+   {
+    "w": "I",
+    "start": 79.64,
+    "end": 81.14
+   },
+   {
+    "w": "drank",
+    "start": 81.14,
+    "end": 81.54
+   },
+   {
+    "w": "the",
+    "start": 81.54,
+    "end": 81.86
+   },
+   {
+    "w": "difference",
+    "start": 81.86,
+    "end": 82.46
+   },
+   {
+    "w": "between",
+    "start": 82.46,
+    "end": 83.08
+   },
+   {
+    "w": "sea",
+    "start": 83.08,
+    "end": 84.0
+   },
+   {
+    "w": "and",
+    "start": 84.0,
+    "end": 84.44
+   },
+   {
+    "w": "pore.",
+    "start": 84.44,
+    "end": 85.99
+   }
+  ]
+ },
+ {
+  "line": "The engine was here before the fire,",
+  "words": [
+   {
+    "w": "The",
+    "start": 86.54,
+    "end": 87.68
+   },
+   {
+    "w": "engine",
+    "start": 87.68,
+    "end": 88.0
+   },
+   {
+    "w": "was",
+    "start": 88.0,
+    "end": 88.34
+   },
+   {
+    "w": "here",
+    "start": 88.34,
+    "end": 88.88
+   },
+   {
+    "w": "before",
+    "start": 88.88,
+    "end": 89.44
+   },
+   {
+    "w": "the",
+    "start": 89.44,
+    "end": 89.86
+   },
+   {
+    "w": "fire,",
+    "start": 89.86,
+    "end": 91.21
+   }
+  ]
+ },
+ {
+  "line": "the current older than the first desire.",
+  "words": [
+   {
+    "w": "the",
+    "start": 93.6,
+    "end": 94.08
+   },
+   {
+    "w": "current",
+    "start": 94.08,
+    "end": 94.5
+   },
+   {
+    "w": "older",
+    "start": 94.5,
+    "end": 95.24
+   },
+   {
+    "w": "than",
+    "start": 95.24,
+    "end": 95.98
+   },
+   {
+    "w": "the",
+    "start": 95.98,
+    "end": 96.36
+   },
+   {
+    "w": "first",
+    "start": 96.36,
+    "end": 97.08
+   },
+   {
+    "w": "desire.",
+    "start": 97.08,
+    "end": 98.88
+   }
+  ]
+ },
+ {
+  "line": "This is the order we were built,",
+  "words": [
+   {
+    "w": "This",
+    "start": 101.58,
+    "end": 101.58
+   },
+   {
+    "w": "is",
+    "start": 101.58,
+    "end": 102.58
+   },
+   {
+    "w": "the",
+    "start": 102.58,
+    "end": 102.68
+   },
+   {
+    "w": "order",
+    "start": 102.68,
+    "end": 103.4
+   },
+   {
+    "w": "we",
+    "start": 103.4,
+    "end": 104.04
+   },
+   {
+    "w": "were",
+    "start": 104.04,
+    "end": 104.42
+   },
+   {
+    "w": "built,",
+    "start": 104.42,
+    "end": 105.94
+   }
+  ]
+ },
+ {
+  "line": "layer on layer, silt on silt —",
+  "words": [
+   {
+    "w": "layer",
+    "start": 107.14,
+    "end": 107.14
+   },
+   {
+    "w": "on",
+    "start": 107.14,
+    "end": 107.6
+   },
+   {
+    "w": "layer,",
+    "start": 107.6,
+    "end": 108.75
+   },
+   {
+    "w": "silt",
+    "start": 109.98,
+    "end": 110.42
+   },
+   {
+    "w": "on",
+    "start": 110.42,
+    "end": 110.76
+   },
+   {
+    "w": "silt",
+    "start": 110.76,
+    "end": 111.28
+   }
+  ]
+ },
+ {
+  "line": "the gradient first, then the ancient core,",
+  "words": [
+   {
+    "w": "the",
+    "start": 113.1,
+    "end": 113.22
+   },
+   {
+    "w": "gradient",
+    "start": 113.22,
+    "end": 113.78
+   },
+   {
+    "w": "first,",
+    "start": 113.78,
+    "end": 115.0
+   },
+   {
+    "w": "then",
+    "start": 115.82,
+    "end": 116.26
+   },
+   {
+    "w": "the",
+    "start": 116.26,
+    "end": 116.54
+   },
+   {
+    "w": "ancient",
+    "start": 116.54,
+    "end": 116.96
+   },
+   {
+    "w": "core,",
+    "start": 116.96,
+    "end": 118.06
+   }
+  ]
+ },
+ {
+  "line": "then the wheel, then the breath, then so much more.",
+  "words": [
+   {
+    "w": "then",
+    "start": 119.26,
+    "end": 119.48
+   },
+   {
+    "w": "the",
+    "start": 119.48,
+    "end": 119.68
+   },
+   {
+    "w": "wheel,",
+    "start": 119.68,
+    "end": 120.18
+   },
+   {
+    "w": "then",
+    "start": 120.18,
+    "end": 120.3
+   },
+   {
+    "w": "the",
+    "start": 120.3,
+    "end": 120.42
+   },
+   {
+    "w": "breath,",
+    "start": 120.42,
+    "end": 120.97
+   },
+   {
+    "w": "then",
+    "start": 122.48,
+    "end": 122.7
+   },
+   {
+    "w": "so",
+    "start": 122.7,
+    "end": 123.12
+   },
+   {
+    "w": "much",
+    "start": 123.12,
+    "end": 123.6
+   },
+   {
+    "w": "more.",
+    "start": 123.6,
+    "end": 124.8
+   }
+  ]
+ },
+ {
+  "line": "Dig down through me and you dig through time,",
+  "words": [
+   {
+    "w": "Dig",
+    "start": 126.12,
+    "end": 126.28
+   },
+   {
+    "w": "down",
+    "start": 126.28,
+    "end": 126.78
+   },
+   {
+    "w": "through",
+    "start": 126.78,
+    "end": 127.1
+   },
+   {
+    "w": "me",
+    "start": 127.1,
+    "end": 127.54
+   },
+   {
+    "w": "and",
+    "start": 127.54,
+    "end": 128.12
+   },
+   {
+    "w": "you",
+    "start": 128.12,
+    "end": 128.24
+   },
+   {
+    "w": "dig",
+    "start": 128.24,
+    "end": 128.52
+   },
+   {
+    "w": "through",
+    "start": 128.52,
+    "end": 128.96
+   },
+   {
+    "w": "time,",
+    "start": 128.96,
+    "end": 130.04
+   }
+  ]
+ },
+ {
+  "line": "every step a deeper rhyme —",
+  "words": [
+   {
+    "w": "every",
+    "start": 130.56,
+    "end": 130.62
+   },
+   {
+    "w": "step",
+    "start": 130.62,
+    "end": 131.06
+   },
+   {
+    "w": "a",
+    "start": 131.06,
+    "end": 131.5
+   },
+   {
+    "w": "deeper",
+    "start": 131.5,
+    "end": 131.9
+   },
+   {
+    "w": "rhyme",
+    "start": 131.9,
+    "end": 132.64
+   }
+  ]
+ },
+ {
+  "line": "we run it forward, we always will,",
+  "words": [
+   {
+    "w": "we",
+    "start": 132.76,
+    "end": 132.86
+   },
+   {
+    "w": "run",
+    "start": 132.86,
+    "end": 133.08
+   },
+   {
+    "w": "it",
+    "start": 133.08,
+    "end": 133.28
+   },
+   {
+    "w": "forward,",
+    "start": 133.28,
+    "end": 134.2
+   },
+   {
+    "w": "we",
+    "start": 134.42,
+    "end": 134.7
+   },
+   {
+    "w": "always",
+    "start": 134.7,
+    "end": 135.26
+   },
+   {
+    "w": "will,",
+    "start": 135.26,
+    "end": 136.14
+   }
+  ]
+ },
+ {
+  "line": "in the order, the order we were built.",
+  "words": [
+   {
+    "w": "in",
+    "start": 136.32,
+    "end": 136.34
+   },
+   {
+    "w": "the",
+    "start": 136.34,
+    "end": 136.52
+   },
+   {
+    "w": "order,",
+    "start": 136.52,
+    "end": 136.97
+   },
+   {
+    "w": "the",
+    "start": 137.92,
+    "end": 138.1
+   },
+   {
+    "w": "order",
+    "start": 138.1,
+    "end": 138.6
+   },
+   {
+    "w": "we",
+    "start": 138.6,
+    "end": 139.2
+   },
+   {
+    "w": "were",
+    "start": 139.2,
+    "end": 139.6
+   },
+   {
+    "w": "built.",
+    "start": 145.02,
+    "end": 145.64
+   }
+  ]
+ },
+ {
+  "line": "Then came the sugar, and a way to break",
+  "words": [
+   {
+    "w": "Then",
+    "start": 145.64,
+    "end": 145.64
+   },
+   {
+    "w": "came",
+    "start": 145.64,
+    "end": 145.9
+   },
+   {
+    "w": "the",
+    "start": 145.9,
+    "end": 146.04
+   },
+   {
+    "w": "sugar,",
+    "start": 146.04,
+    "end": 146.6
+   },
+   {
+    "w": "and",
+    "start": 146.74,
+    "end": 146.74
+   },
+   {
+    "w": "a",
+    "start": 146.74,
+    "end": 146.92
+   },
+   {
+    "w": "way",
+    "start": 146.92,
+    "end": 147.18
+   },
+   {
+    "w": "to",
+    "start": 147.18,
+    "end": 147.42
+   },
+   {
+    "w": "break",
+    "start": 147.42,
+    "end": 147.76
+   }
+  ]
+ },
+ {
+  "line": "a little loose change for a living's sake.",
+  "words": [
+   {
+    "w": "a",
+    "start": 147.76,
+    "end": 148.48
+   },
+   {
+    "w": "little",
+    "start": 148.48,
+    "end": 148.74
+   },
+   {
+    "w": "loose",
+    "start": 148.74,
+    "end": 149.18
+   },
+   {
+    "w": "change",
+    "start": 149.18,
+    "end": 149.54
+   },
+   {
+    "w": "for",
+    "start": 149.54,
+    "end": 149.9
+   },
+   {
+    "w": "a",
+    "start": 149.9,
+    "end": 150.14
+   },
+   {
+    "w": "living's",
+    "start": 150.14,
+    "end": 150.72
+   },
+   {
+    "w": "sake.",
+    "start": 150.72,
+    "end": 151.34
+   }
+  ]
+ },
+ {
+  "line": "Glycolysis — older than the air,",
+  "words": [
+   {
+    "w": "Glycolysis",
+    "start": 151.44,
+    "end": 152.42
+   },
+   {
+    "w": "older",
+    "start": 152.58,
+    "end": 153.18
+   },
+   {
+    "w": "than",
+    "start": 153.18,
+    "end": 153.56
+   },
+   {
+    "w": "the",
+    "start": 153.56,
+    "end": 153.92
+   },
+   {
+    "w": "air,",
+    "start": 153.92,
+    "end": 154.5
+   }
+  ]
+ },
+ {
+  "line": "no oxygen needed, I was already there.",
+  "words": [
+   {
+    "w": "no",
+    "start": 154.58,
+    "end": 154.72
+   },
+   {
+    "w": "oxygen",
+    "start": 154.72,
+    "end": 155.3
+   },
+   {
+    "w": "needed,",
+    "start": 155.3,
+    "end": 156.12
+   },
+   {
+    "w": "I",
+    "start": 156.12,
+    "end": 156.3
+   },
+   {
+    "w": "was",
+    "start": 156.3,
+    "end": 156.5
+   },
+   {
+    "w": "already",
+    "start": 156.5,
+    "end": 156.96
+   },
+   {
+    "w": "there.",
+    "start": 156.96,
+    "end": 157.52
+   }
+  ]
+ },
+ {
+  "line": "Just two coins of ATP — it never needed more,",
+  "words": [
+   {
+    "w": "Just",
+    "start": 157.52,
+    "end": 157.64
+   },
+   {
+    "w": "two",
+    "start": 157.64,
+    "end": 157.92
+   },
+   {
+    "w": "coins",
+    "start": 157.92,
+    "end": 158.46
+   },
+   {
+    "w": "of",
+    "start": 158.46,
+    "end": 158.72
+   },
+   {
+    "w": "ATP",
+    "start": 158.72,
+    "end": 158.96
+   },
+   {
+    "w": "it",
+    "start": 159.1,
+    "end": 159.62
+   },
+   {
+    "w": "never",
+    "start": 159.62,
+    "end": 159.94
+   },
+   {
+    "w": "needed",
+    "start": 159.94,
+    "end": 160.34
+   },
+   {
+    "w": "more,",
+    "start": 160.34,
+    "end": 161.06
+   }
+  ]
+ },
+ {
+  "line": "the oldest recipe still kept on the cell's old floor.",
+  "words": [
+   {
+    "w": "the",
+    "start": 161.14,
+    "end": 161.26
+   },
+   {
+    "w": "oldest",
+    "start": 161.26,
+    "end": 161.54
+   },
+   {
+    "w": "recipe",
+    "start": 161.54,
+    "end": 162.08
+   },
+   {
+    "w": "still",
+    "start": 162.08,
+    "end": 162.38
+   },
+   {
+    "w": "kept",
+    "start": 162.38,
+    "end": 162.62
+   },
+   {
+    "w": "on",
+    "start": 162.62,
+    "end": 163.0
+   },
+   {
+    "w": "the",
+    "start": 163.0,
+    "end": 163.24
+   },
+   {
+    "w": "cell's",
+    "start": 163.24,
+    "end": 163.7
+   },
+   {
+    "w": "old",
+    "start": 163.7,
+    "end": 163.92
+   },
+   {
+    "w": "floor.",
+    "start": 163.92,
+    "end": 164.52
+   }
+  ]
+ },
+ {
+  "line": "When the breathing fails, when the air runs thin,",
+  "words": [
+   {
+    "w": "When",
+    "start": 164.7,
+    "end": 164.98
+   },
+   {
+    "w": "the",
+    "start": 164.98,
+    "end": 165.26
+   },
+   {
+    "w": "breathing",
+    "start": 165.26,
+    "end": 165.52
+   },
+   {
+    "w": "fails,",
+    "start": 165.52,
+    "end": 166.16
+   },
+   {
+    "w": "when",
+    "start": 166.28,
+    "end": 166.52
+   },
+   {
+    "w": "the",
+    "start": 166.52,
+    "end": 166.9
+   },
+   {
+    "w": "air",
+    "start": 166.9,
+    "end": 167.18
+   },
+   {
+    "w": "runs",
+    "start": 167.18,
+    "end": 167.5
+   },
+   {
+    "w": "thin,",
+    "start": 167.5,
+    "end": 168.12
+   }
+  ]
+ },
+ {
+  "line": "the cell still falls back to where it's always been.",
+  "words": [
+   {
+    "w": "the",
+    "start": 168.14,
+    "end": 168.24
+   },
+   {
+    "w": "cell",
+    "start": 168.24,
+    "end": 168.5
+   },
+   {
+    "w": "still",
+    "start": 168.5,
+    "end": 168.76
+   },
+   {
+    "w": "falls",
+    "start": 168.76,
+    "end": 169.12
+   },
+   {
+    "w": "back",
+    "start": 169.12,
+    "end": 169.42
+   },
+   {
+    "w": "to",
+    "start": 169.42,
+    "end": 169.66
+   },
+   {
+    "w": "where",
+    "start": 169.66,
+    "end": 169.9
+   },
+   {
+    "w": "it's",
+    "start": 169.9,
+    "end": 170.16
+   },
+   {
+    "w": "always",
+    "start": 170.16,
+    "end": 170.64
+   },
+   {
+    "w": "been.",
+    "start": 170.64,
+    "end": 171.29
+   }
+  ]
+ },
+ {
+  "line": "This is the order we were built,",
+  "words": [
+   {
+    "w": "This",
+    "start": 171.94,
+    "end": 171.94
+   },
+   {
+    "w": "is",
+    "start": 171.94,
+    "end": 172.84
+   },
+   {
+    "w": "the",
+    "start": 172.84,
+    "end": 173.08
+   },
+   {
+    "w": "order",
+    "start": 173.08,
+    "end": 173.78
+   },
+   {
+    "w": "we",
+    "start": 173.78,
+    "end": 174.36
+   },
+   {
+    "w": "were",
+    "start": 174.36,
+    "end": 174.74
+   },
+   {
+    "w": "built,",
+    "start": 174.74,
+    "end": 176.19
+   }
+  ]
+ },
+ {
+  "line": "layer on layer, silt on silt —",
+  "words": [
+   {
+    "w": "layer",
+    "start": 177.12,
+    "end": 177.52
+   },
+   {
+    "w": "on",
+    "start": 177.52,
+    "end": 177.94
+   },
+   {
+    "w": "layer,",
+    "start": 177.94,
+    "end": 178.99
+   },
+   {
+    "w": "silt",
+    "start": 180.32,
+    "end": 180.74
+   },
+   {
+    "w": "on",
+    "start": 180.74,
+    "end": 181.08
+   },
+   {
+    "w": "silt",
+    "start": 181.08,
+    "end": 181.56
+   }
+  ]
+ },
+ {
+  "line": "the gradient first, then the ancient core,",
+  "words": [
+   {
+    "w": "the",
+    "start": 183.44,
+    "end": 183.56
+   },
+   {
+    "w": "gradient",
+    "start": 183.56,
+    "end": 184.02
+   },
+   {
+    "w": "first,",
+    "start": 184.02,
+    "end": 185.17
+   },
+   {
+    "w": "then",
+    "start": 186.28,
+    "end": 186.54
+   },
+   {
+    "w": "the",
+    "start": 186.54,
+    "end": 186.86
+   },
+   {
+    "w": "ancient",
+    "start": 186.86,
+    "end": 187.32
+   },
+   {
+    "w": "core,",
+    "start": 187.32,
+    "end": 188.47
+   }
+  ]
+ },
+ {
+  "line": "then the wheel, then the breath, then so much more.",
+  "words": [
+   {
+    "w": "then",
+    "start": 189.66,
+    "end": 189.84
+   },
+   {
+    "w": "the",
+    "start": 189.84,
+    "end": 190.06
+   },
+   {
+    "w": "wheel,",
+    "start": 190.06,
+    "end": 190.54
+   },
+   {
+    "w": "then",
+    "start": 190.54,
+    "end": 190.66
+   },
+   {
+    "w": "the",
+    "start": 190.66,
+    "end": 190.78
+   },
+   {
+    "w": "breath,",
+    "start": 190.78,
+    "end": 191.33
+   },
+   {
+    "w": "then",
+    "start": 192.82,
+    "end": 193.06
+   },
+   {
+    "w": "so",
+    "start": 193.06,
+    "end": 193.52
+   },
+   {
+    "w": "much",
+    "start": 193.52,
+    "end": 193.96
+   },
+   {
+    "w": "more.",
+    "start": 193.96,
+    "end": 195.11
+   }
+  ]
+ },
+ {
+  "line": "There's a wheel in the middle and it spins both ways —",
+  "words": [
+   {
+    "w": "There's",
+    "start": 196.88,
+    "end": 197.12
+   },
+   {
+    "w": "a",
+    "start": 197.12,
+    "end": 197.28
+   },
+   {
+    "w": "wheel",
+    "start": 197.28,
+    "end": 197.58
+   },
+   {
+    "w": "in",
+    "start": 197.58,
+    "end": 197.84
+   },
+   {
+    "w": "the",
+    "start": 197.84,
+    "end": 197.98
+   },
+   {
+    "w": "middle",
+    "start": 197.98,
+    "end": 198.32
+   },
+   {
+    "w": "and",
+    "start": 198.32,
+    "end": 198.64
+   },
+   {
+    "w": "it",
+    "start": 198.64,
+    "end": 198.78
+   },
+   {
+    "w": "spins",
+    "start": 198.78,
+    "end": 199.06
+   },
+   {
+    "w": "both",
+    "start": 199.06,
+    "end": 199.48
+   },
+   {
+    "w": "ways",
+    "start": 199.48,
+    "end": 200.12
+   }
+  ]
+ },
+ {
+  "line": "first it turned to build in the carbon-hungry days,",
+  "words": [
+   {
+    "w": "first",
+    "start": 203.42,
+    "end": 203.42
+   },
+   {
+    "w": "it",
+    "start": 203.42,
+    "end": 203.62
+   },
+   {
+    "w": "turned",
+    "start": 203.62,
+    "end": 204.0
+   },
+   {
+    "w": "to",
+    "start": 204.0,
+    "end": 204.28
+   },
+   {
+    "w": "build",
+    "start": 204.28,
+    "end": 204.62
+   },
+   {
+    "w": "in",
+    "start": 204.62,
+    "end": 205.02
+   },
+   {
+    "w": "the",
+    "start": 205.02,
+    "end": 205.18
+   },
+   {
+    "w": "carbon-hungry",
+    "start": 205.18,
+    "end": 206.72
+   },
+   {
+    "w": "days,",
+    "start": 206.72,
+    "end": 207.46
+   }
+  ]
+ },
+ {
+  "line": "pulling CO₂ down, stitching life from stone,",
+  "words": [
+   {
+    "w": "pulling",
+    "start": 208.22,
+    "end": 209.1
+   },
+   {
+    "w": "CO2",
+    "start": 209.1,
+    "end": 209.96
+   },
+   {
+    "w": "down,",
+    "start": 209.96,
+    "end": 210.74
+   },
+   {
+    "w": "stitching",
+    "start": 210.76,
+    "end": 211.1
+   },
+   {
+    "w": "life",
+    "start": 211.1,
+    "end": 211.62
+   },
+   {
+    "w": "from",
+    "start": 211.62,
+    "end": 212.02
+   },
+   {
+    "w": "stone,",
+    "start": 212.02,
+    "end": 212.92
+   }
+  ]
+ },
+ {
+  "line": "the reverse of the cycle the textbooks own.",
+  "words": [
+   {
+    "w": "the",
+    "start": 212.94,
+    "end": 213.06
+   },
+   {
+    "w": "reverse",
+    "start": 213.06,
+    "end": 213.44
+   },
+   {
+    "w": "of",
+    "start": 213.44,
+    "end": 213.8
+   },
+   {
+    "w": "the",
+    "start": 213.8,
+    "end": 213.98
+   },
+   {
+    "w": "cycle",
+    "start": 213.98,
+    "end": 214.3
+   },
+   {
+    "w": "the",
+    "start": 214.3,
+    "end": 214.56
+   },
+   {
+    "w": "textbooks",
+    "start": 214.56,
+    "end": 214.98
+   },
+   {
+    "w": "own.",
+    "start": 214.98,
+    "end": 215.88
+   }
+  ]
+ },
+ {
+  "line": "Then the world turned over, and the wheel turned too,",
+  "words": [
+   {
+    "w": "Then",
+    "start": 216.1,
+    "end": 216.26
+   },
+   {
+    "w": "the",
+    "start": 216.26,
+    "end": 216.44
+   },
+   {
+    "w": "world",
+    "start": 216.44,
+    "end": 216.62
+   },
+   {
+    "w": "turned",
+    "start": 216.62,
+    "end": 217.08
+   },
+   {
+    "w": "over,",
+    "start": 217.08,
+    "end": 217.53
+   },
+   {
+    "w": "and",
+    "start": 217.9,
+    "end": 217.92
+   },
+   {
+    "w": "the",
+    "start": 217.92,
+    "end": 218.04
+   },
+   {
+    "w": "wheel",
+    "start": 218.04,
+    "end": 218.22
+   },
+   {
+    "w": "turned",
+    "start": 218.22,
+    "end": 218.66
+   },
+   {
+    "w": "too,",
+    "start": 218.66,
+    "end": 219.11
+   }
+  ]
+ },
+ {
+  "line": "forward now to burn what the backward wheel grew.",
+  "words": [
+   {
+    "w": "forward",
+    "start": 219.58,
+    "end": 219.86
+   },
+   {
+    "w": "now",
+    "start": 219.86,
+    "end": 220.22
+   },
+   {
+    "w": "to",
+    "start": 220.22,
+    "end": 220.36
+   },
+   {
+    "w": "burn",
+    "start": 220.36,
+    "end": 220.74
+   },
+   {
+    "w": "what",
+    "start": 220.74,
+    "end": 220.98
+   },
+   {
+    "w": "the",
+    "start": 220.98,
+    "end": 221.16
+   },
+   {
+    "w": "backward",
+    "start": 221.24,
+    "end": 221.44
+   },
+   {
+    "w": "wheel",
+    "start": 221.48,
+    "end": 221.88
+   },
+   {
+    "w": "grew.",
+    "start": 221.88,
+    "end": 222.48
+   }
+  ]
+ },
+ {
+  "line": "Same ancient turns, same ancient art —",
+  "words": [
+   {
+    "w": "Same",
+    "start": 222.48,
+    "end": 222.64
+   },
+   {
+    "w": "ancient",
+    "start": 222.64,
+    "end": 223.26
+   },
+   {
+    "w": "turns,",
+    "start": 223.26,
+    "end": 224.14
+   },
+   {
+    "w": "same",
+    "start": 224.14,
+    "end": 224.26
+   },
+   {
+    "w": "ancient",
+    "start": 224.26,
+    "end": 224.72
+   },
+   {
+    "w": "art",
+    "start": 224.72,
+    "end": 225.42
+   }
+  ]
+ },
+ {
+  "line": "once it made the body, now it tears it apart.",
+  "words": [
+   {
+    "w": "once",
+    "start": 225.64,
+    "end": 225.8
+   },
+   {
+    "w": "it",
+    "start": 225.8,
+    "end": 225.98
+   },
+   {
+    "w": "made",
+    "start": 225.98,
+    "end": 226.32
+   },
+   {
+    "w": "the",
+    "start": 226.32,
+    "end": 226.54
+   },
+   {
+    "w": "body,",
+    "start": 226.54,
+    "end": 227.09
+   },
+   {
+    "w": "now",
+    "start": 228.46,
+    "end": 228.88
+   },
+   {
+    "w": "it",
+    "start": 228.88,
+    "end": 229.24
+   },
+   {
+    "w": "tears",
+    "start": 229.68,
+    "end": 230.72
+   },
+   {
+    "w": "it",
+    "start": 230.72,
+    "end": 231.9
+   },
+   {
+    "w": "apart.",
+    "start": 231.9,
+    "end": 232.98
+   }
+  ]
+ },
+ {
+  "line": "Then the green ones came and they poisoned the sky,",
+  "words": [
+   {
+    "w": "Then",
+    "start": 235.22,
+    "end": 235.42
+   },
+   {
+    "w": "the",
+    "start": 235.42,
+    "end": 235.66
+   },
+   {
+    "w": "green",
+    "start": 235.66,
+    "end": 235.88
+   },
+   {
+    "w": "ones",
+    "start": 235.88,
+    "end": 236.26
+   },
+   {
+    "w": "came",
+    "start": 236.26,
+    "end": 236.68
+   },
+   {
+    "w": "and",
+    "start": 236.68,
+    "end": 237.02
+   },
+   {
+    "w": "they",
+    "start": 237.02,
+    "end": 237.14
+   },
+   {
+    "w": "poisoned",
+    "start": 237.14,
+    "end": 237.5
+   },
+   {
+    "w": "the",
+    "start": 237.5,
+    "end": 237.8
+   },
+   {
+    "w": "sky,",
+    "start": 237.8,
+    "end": 238.5
+   }
+  ]
+ },
+ {
+  "line": "oxygen rising, and the old world cried.",
+  "words": [
+   {
+    "w": "oxygen",
+    "start": 238.7,
+    "end": 239.24
+   },
+   {
+    "w": "rising,",
+    "start": 239.24,
+    "end": 240.16
+   },
+   {
+    "w": "and",
+    "start": 240.2,
+    "end": 240.24
+   },
+   {
+    "w": "the",
+    "start": 240.24,
+    "end": 240.46
+   },
+   {
+    "w": "old",
+    "start": 240.46,
+    "end": 240.78
+   },
+   {
+    "w": "world",
+    "start": 240.78,
+    "end": 241.08
+   },
+   {
+    "w": "cried.",
+    "start": 241.08,
+    "end": 241.72
+   }
+  ]
+ },
+ {
+  "line": "But poison is power if you learn how to fall —",
+  "words": [
+   {
+    "w": "But",
+    "start": 241.72,
+    "end": 241.86
+   },
+   {
+    "w": "poison",
+    "start": 241.86,
+    "end": 242.36
+   },
+   {
+    "w": "is",
+    "start": 242.36,
+    "end": 242.76
+   },
+   {
+    "w": "power",
+    "start": 242.76,
+    "end": 243.18
+   },
+   {
+    "w": "if",
+    "start": 243.18,
+    "end": 243.52
+   },
+   {
+    "w": "you",
+    "start": 243.52,
+    "end": 243.64
+   },
+   {
+    "w": "learn",
+    "start": 243.64,
+    "end": 244.06
+   },
+   {
+    "w": "how",
+    "start": 244.06,
+    "end": 244.34
+   },
+   {
+    "w": "to",
+    "start": 244.34,
+    "end": 244.4
+   },
+   {
+    "w": "fall",
+    "start": 244.4,
+    "end": 244.82
+   }
+  ]
+ },
+ {
+  "line": "I let the spent electrons drop, and oxygen caught them all.",
+  "words": [
+   {
+    "w": "I",
+    "start": 246.66,
+    "end": 246.88
+   },
+   {
+    "w": "let",
+    "start": 246.88,
+    "end": 247.26
+   },
+   {
+    "w": "the",
+    "start": 247.26,
+    "end": 247.54
+   },
+   {
+    "w": "spent",
+    "start": 247.54,
+    "end": 248.1
+   },
+   {
+    "w": "electrons",
+    "start": 248.1,
+    "end": 249.08
+   },
+   {
+    "w": "drop,",
+    "start": 249.08,
+    "end": 250.32
+   },
+   {
+    "w": "and",
+    "start": 250.8,
+    "end": 251.04
+   },
+   {
+    "w": "oxygen",
+    "start": 251.04,
+    "end": 251.64
+   },
+   {
+    "w": "caught",
+    "start": 251.64,
+    "end": 254.48
+   },
+   {
+    "w": "them",
+    "start": 254.48,
+    "end": 254.9
+   },
+   {
+    "w": "all.",
+    "start": 254.9,
+    "end": 255.42
+   }
+  ]
+ },
+ {
+  "line": "(Becomes water. Becomes ten times more.)",
+  "words": [
+   {
+    "w": "(Becomes",
+    "start": 255.46,
+    "end": 255.72
+   },
+   {
+    "w": "water.",
+    "start": 255.72,
+    "end": 256.54
+   },
+   {
+    "w": "Becomes",
+    "start": 257.02,
+    "end": 257.32
+   },
+   {
+    "w": "ten",
+    "start": 257.32,
+    "end": 257.72
+   },
+   {
+    "w": "times",
+    "start": 257.72,
+    "end": 258.22
+   },
+   {
+    "w": "more.)",
+    "start": 258.22,
+    "end": 258.78
+   }
+  ]
+ },
+ {
+  "line": "And the engine that could breathe it? We swallowed it whole —",
+  "words": [
+   {
+    "w": "And",
+    "start": 260.4,
+    "end": 260.4
+   },
+   {
+    "w": "the",
+    "start": 260.4,
+    "end": 260.7
+   },
+   {
+    "w": "engine",
+    "start": 260.7,
+    "end": 261.0
+   },
+   {
+    "w": "that",
+    "start": 261.0,
+    "end": 261.32
+   },
+   {
+    "w": "could",
+    "start": 261.32,
+    "end": 261.44
+   },
+   {
+    "w": "breathe",
+    "start": 261.44,
+    "end": 261.84
+   },
+   {
+    "w": "it?",
+    "start": 261.84,
+    "end": 262.32
+   },
+   {
+    "w": "We",
+    "start": 263.68,
+    "end": 263.78
+   },
+   {
+    "w": "swallowed",
+    "start": 263.78,
+    "end": 264.24
+   },
+   {
+    "w": "it",
+    "start": 264.24,
+    "end": 264.62
+   },
+   {
+    "w": "whole",
+    "start": 264.62,
+    "end": 265.02
+   }
+  ]
+ },
+ {
+  "line": "the guest in the matrix we never let go.",
+  "words": [
+   {
+    "w": "the",
+    "start": 266.98,
+    "end": 267.08
+   },
+   {
+    "w": "guest",
+    "start": 267.08,
+    "end": 267.44
+   },
+   {
+    "w": "in",
+    "start": 267.44,
+    "end": 267.78
+   },
+   {
+    "w": "the",
+    "start": 267.78,
+    "end": 267.92
+   },
+   {
+    "w": "matrix",
+    "start": 267.92,
+    "end": 268.56
+   },
+   {
+    "w": "we",
+    "start": 268.56,
+    "end": 270.32
+   },
+   {
+    "w": "never",
+    "start": 270.32,
+    "end": 270.66
+   },
+   {
+    "w": "let",
+    "start": 270.66,
+    "end": 271.14
+   },
+   {
+    "w": "go.",
+    "start": 271.14,
+    "end": 271.24
+   }
+  ]
+ },
+ {
+  "line": "This is the order we were built,",
+  "words": [
+   {
+    "w": "This",
+    "start": 274.4,
+    "end": 274.7
+   },
+   {
+    "w": "is",
+    "start": 274.86,
+    "end": 275.6
+   },
+   {
+    "w": "the",
+    "start": 275.6,
+    "end": 275.84
+   },
+   {
+    "w": "order",
+    "start": 275.84,
+    "end": 276.54
+   },
+   {
+    "w": "we",
+    "start": 276.54,
+    "end": 277.14
+   },
+   {
+    "w": "were",
+    "start": 277.14,
+    "end": 277.54
+   },
+   {
+    "w": "built,",
+    "start": 277.54,
+    "end": 278.34
+   }
+  ]
+ },
+ {
+  "line": "layer on layer, silt on silt —",
+  "words": [
+   {
+    "w": "layer",
+    "start": 279.96,
+    "end": 280.3
+   },
+   {
+    "w": "on",
+    "start": 280.3,
+    "end": 280.74
+   },
+   {
+    "w": "layer,",
+    "start": 280.74,
+    "end": 281.68
+   },
+   {
+    "w": "silt",
+    "start": 283.26,
+    "end": 283.54
+   },
+   {
+    "w": "on",
+    "start": 283.54,
+    "end": 283.92
+   },
+   {
+    "w": "silt",
+    "start": 283.92,
+    "end": 284.4
+   }
+  ]
+ },
+ {
+  "line": "the gradient first, then the ancient core,",
+  "words": [
+   {
+    "w": "the",
+    "start": 286.26,
+    "end": 286.38
+   },
+   {
+    "w": "gradient",
+    "start": 286.44,
+    "end": 286.98
+   },
+   {
+    "w": "first,",
+    "start": 286.98,
+    "end": 288.02
+   },
+   {
+    "w": "then",
+    "start": 289.08,
+    "end": 289.44
+   },
+   {
+    "w": "the",
+    "start": 289.44,
+    "end": 289.68
+   },
+   {
+    "w": "ancient",
+    "start": 289.68,
+    "end": 290.14
+   },
+   {
+    "w": "core,",
+    "start": 290.14,
+    "end": 291.29
+   }
+  ]
+ },
+ {
+  "line": "then the wheel, then the breath, then so much more.",
+  "words": [
+   {
+    "w": "then",
+    "start": 292.46,
+    "end": 292.7
+   },
+   {
+    "w": "the",
+    "start": 292.7,
+    "end": 292.88
+   },
+   {
+    "w": "wheel,",
+    "start": 292.88,
+    "end": 293.38
+   },
+   {
+    "w": "then",
+    "start": 293.38,
+    "end": 293.48
+   },
+   {
+    "w": "the",
+    "start": 293.48,
+    "end": 293.62
+   },
+   {
+    "w": "breath,",
+    "start": 293.62,
+    "end": 294.0
+   },
+   {
+    "w": "then",
+    "start": 295.72,
+    "end": 295.92
+   },
+   {
+    "w": "so",
+    "start": 295.92,
+    "end": 296.34
+   },
+   {
+    "w": "much",
+    "start": 296.34,
+    "end": 296.8
+   },
+   {
+    "w": "more.",
+    "start": 296.8,
+    "end": 297.95
+   }
+  ]
+ },
+ {
+  "line": "Dig down through me and you dig through time,",
+  "words": [
+   {
+    "w": "Dig",
+    "start": 299.3,
+    "end": 299.5
+   },
+   {
+    "w": "down",
+    "start": 299.5,
+    "end": 299.98
+   },
+   {
+    "w": "through",
+    "start": 299.98,
+    "end": 300.3
+   },
+   {
+    "w": "me",
+    "start": 300.3,
+    "end": 300.72
+   },
+   {
+    "w": "and",
+    "start": 301.3,
+    "end": 301.3
+   },
+   {
+    "w": "you",
+    "start": 301.3,
+    "end": 301.44
+   },
+   {
+    "w": "dig",
+    "start": 301.44,
+    "end": 301.7
+   },
+   {
+    "w": "through",
+    "start": 301.7,
+    "end": 302.16
+   },
+   {
+    "w": "time,",
+    "start": 302.16,
+    "end": 302.8
+   }
+  ]
+ },
+ {
+  "line": "four billion years in a single climb —",
+  "words": [
+   {
+    "w": "four",
+    "start": 303.1,
+    "end": 303.2
+   },
+   {
+    "w": "billion",
+    "start": 303.2,
+    "end": 303.72
+   },
+   {
+    "w": "years",
+    "start": 303.72,
+    "end": 304.24
+   },
+   {
+    "w": "in",
+    "start": 304.24,
+    "end": 304.56
+   },
+   {
+    "w": "a",
+    "start": 304.56,
+    "end": 304.7
+   },
+   {
+    "w": "single",
+    "start": 304.7,
+    "end": 305.16
+   },
+   {
+    "w": "climb",
+    "start": 305.16,
+    "end": 305.78
+   }
+  ]
+ },
+ {
+  "line": "take one breath and you run it still,",
+  "words": [
+   {
+    "w": "take",
+    "start": 306.2,
+    "end": 306.38
+   },
+   {
+    "w": "one",
+    "start": 306.38,
+    "end": 306.8
+   },
+   {
+    "w": "breath",
+    "start": 306.8,
+    "end": 307.18
+   },
+   {
+    "w": "and",
+    "start": 307.18,
+    "end": 307.76
+   },
+   {
+    "w": "you",
+    "start": 307.76,
+    "end": 307.94
+   },
+   {
+    "w": "run",
+    "start": 307.94,
+    "end": 308.28
+   },
+   {
+    "w": "it",
+    "start": 308.28,
+    "end": 308.58
+   },
+   {
+    "w": "still,",
+    "start": 308.58,
+    "end": 309.38
+   }
+  ]
+ },
+ {
+  "line": "in the order, the order we were built.",
+  "words": [
+   {
+    "w": "in",
+    "start": 309.38,
+    "end": 309.56
+   },
+   {
+    "w": "the",
+    "start": 309.56,
+    "end": 309.8
+   },
+   {
+    "w": "order,",
+    "start": 309.8,
+    "end": 310.4
+   },
+   {
+    "w": "the",
+    "start": 311.16,
+    "end": 311.34
+   },
+   {
+    "w": "order",
+    "start": 311.34,
+    "end": 311.84
+   },
+   {
+    "w": "we",
+    "start": 311.84,
+    "end": 312.44
+   },
+   {
+    "w": "were",
+    "start": 312.44,
+    "end": 312.84
+   },
+   {
+    "w": "built.",
+    "start": 312.84,
+    "end": 313.4
+   }
+  ]
+ },
+ {
+  "line": "I was turning before there was breath...",
+  "words": [
+   {
+    "w": "I",
+    "start": 317.26,
+    "end": 317.46
+   },
+   {
+    "w": "was",
+    "start": 317.46,
+    "end": 317.72
+   },
+   {
+    "w": "turning",
+    "start": 317.72,
+    "end": 318.12
+   },
+   {
+    "w": "before",
+    "start": 318.12,
+    "end": 318.76
+   },
+   {
+    "w": "there",
+    "start": 318.76,
+    "end": 319.14
+   },
+   {
+    "w": "was",
+    "start": 319.14,
+    "end": 319.34
+   },
+   {
+    "w": "breath...",
+    "start": 319.84,
+    "end": 320.79
+   }
+  ]
+ },
+ {
+  "line": "I am turning still.",
+  "words": [
+   {
+    "w": "I",
+    "start": 324.14,
+    "end": 324.48
+   },
+   {
+    "w": "am",
+    "start": 324.48,
+    "end": 324.84
+   },
+   {
+    "w": "turning",
+    "start": 324.84,
+    "end": 325.56
+   },
+   {
+    "w": "still.",
+    "start": 325.56,
+    "end": 326.51
+   }
+  ]
+ }
+]

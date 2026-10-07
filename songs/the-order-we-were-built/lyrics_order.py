@@ -123,5 +123,11 @@ def load():
 # tidsplan og taktslag trengs bare av videoskriptet (align_lyrics.py klarer seg uten)
 if os.path.exists(os.path.join(HERE, "timing.json")):
     SECS, LINES, END = load()
+# ordtider fra stable-ts (words.json) kobles til linjene i rekkefølge
+if "LINES" in globals() and os.path.exists(os.path.join(HERE, "words.json")):
+    _w = json.load(open(os.path.join(HERE, "words.json"), encoding="utf-8"))
+    if len(_w) == len(LINES):
+        for _ln, _e in zip(LINES, _w):
+            _ln["words"] = _e["words"]
 if os.path.exists(os.path.join(HERE, "beats.json")):
     BEATS = json.load(open(os.path.join(HERE, "beats.json")))

@@ -293,8 +293,7 @@ def glyco_scene(ctx, t, u):
 KREBS = ["citrate", "isocitrate", "α-ketoglutarate", "succinyl-CoA", "succinate", "fumarate", "malate", "oxaloacetate"]
 
 
-def krebs_scene(ctx, t, u, dur):
-    half = dur * 0.5
+def krebs_scene(ctx, t, u, dur, half):
     fwd = u > half
     k = smooth((u - half + 1.5) / 3.0)   # overgang
     top = (lerp(0.05, 0.16, k), lerp(0.14, 0.08, k), lerp(0.10, 0.05, k))
@@ -414,7 +413,7 @@ def outro_scene(ctx, t, u):
     rgba(ctx, (0.10, 0.12, 0.25), 0.6); ctx.rectangle(0, 0, W, 200); ctx.fill()
     membrane(ctx, 200)
     atp_synthase(ctx, 760, 200, 1.2, t / (1.6 + 0.15 * u) * TAU, t=t)
-    a = smooth((t - 322) / 3)
+    a = smooth((t - LINES[-1]["t1"] - 1.0) / 3)
     text(ctx, "The Order We Were Built", 640, 110, 52, C["white"], a, bold=True, font=LYRIC_FONT)
     text(ctx, "BiologyTunes", 640, 150, 22, C["hl"], a, bold=True)
 
@@ -458,9 +457,37 @@ def lyric_panel(ctx, t, sec):
     wdt = ctx.text_extents(l["text"]).x_advance
     if wdt > W - 80:
         size *= (W - 80) / wdt
-    text(ctx, l["text"], 640, PANEL_Y + 78, size, lerp_col((1, 1, 1), C["hl"], fade), 1, bold=True, font=LYRIC_FONT)
+    if "words" in l:
+        karaoke(ctx, l, t, size)
+    else:
+        text(ctx, l["text"], 640, PANEL_Y + 78, size, lerp_col((1, 1, 1), C["hl"], fade), 1, bold=True, font=LYRIC_FONT)
     if nxt:
         text(ctx, nxt["text"], 640, PANEL_Y + 122, 20, (0.7, 0.7, 0.78), 0.7, font=LYRIC_FONT)
+
+
+def karaoke(ctx, l, t, size):
+    """Tegner linja og fyller hvert ord med farge mens det synges (ordtider fra stable-ts)."""
+    ctx.select_font_face(LYRIC_FONT, cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_BOLD)
+    ctx.set_font_size(size)
+    toks = l["text"].split()
+    space = ctx.text_extents(" ").x_advance
+    widths = [ctx.text_extents(w).x_advance for w in toks]
+    x = 640 - (sum(widths) + space * (len(toks) - 1)) / 2
+    y = PANEL_Y + 78
+    wi, prev_end = 0, -1.0
+    for tok, w in zip(toks, widths):
+        if any(ch.isalnum() for ch in tok) and wi < len(l["words"]):
+            wd = l["words"][wi]; wi += 1
+            prog = clamp((t - wd["start"]) / max(0.08, wd["end"] - wd["start"]))
+            prev_end = wd["end"]
+        else:   # tankestrek o.l. følger forrige ord
+            prog = 1.0 if t >= prev_end else 0.0
+        ctx.move_to(x, y); rgba(ctx, (1, 1, 1), 0.92); ctx.show_text(tok)
+        if prog > 0:
+            ctx.save(); ctx.rectangle(x - 2, y - size, w * prog + 2, size * 1.5); ctx.clip()
+            ctx.move_to(x, y); rgba(ctx, C["hl"]); ctx.show_text(tok)
+            ctx.restore()
+        x += w + space
 
 
 def lerp_col(a, b, x):
@@ -489,21 +516,16 @@ def render(t):
     elif k == "verse2":
         glyco_scene(ctx, t, u)
     elif k == "verse3":
-        krebs_scene(ctx, t, u, dur)
+        krebs_scene(ctx, t, u, dur, sec["lines"][4]["t0"] - sec["t0"])
     elif k == "bridge":
         bridge_scene(ctx, t, u, sec)
     else:
-        # outro: motoren snurrer → instrumental coda med alle lagene → motoren + tittel
-        a_mid = smooth((t - 279) / 2.5) * (1 - smooth((t - 318) / 2.5))
-        if a_mid < 1:
-            outro_scene(ctx, t, u)
-        if a_mid > 0:
-            ctx.push_group(); strata_scene(ctx, t, t - 279, sec, final=True); ctx.pop_group_to_source(); ctx.paint_with_alpha(a_mid)
+                outro_scene(ctx, t, u)
     for s in SECS[1:]:
         d = t - s["t0"]
         if -0.3 < d < 0.3 and s["key"] != "verse1":
             rgba(ctx, (0, 0, 0), 0.7 * (1 - abs(d) / 0.3)); ctx.paint()
-    if (k != "intro" or u > 11) and not (k == "outro" and t > 279):
+    if (k != "intro" or u > 11) and not (k == "outro" and t > LINES[-1]["t1"] + 0.5):
         fact_card(ctx, sec, t)
     lyric_panel(ctx, t, sec)
     if t < 1.0:

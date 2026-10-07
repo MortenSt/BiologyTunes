@@ -17,7 +17,8 @@ Celleånding fortalt i den rekkefølgen den oppsto, sunget av ATP-syntase (Suno-
 ## Filer
 - `audio.mp3` – sangen fra Suno
 - `lyrics_order.py` – tekst og faktabokser
-- `timing.json` – start/slutt for hver tekstlinje (fra Gemini); juster her og kjør på nytt
+- `align_lyrics.py` – finner tidskodene med stable-ts (forced alignment); kjøres lokalt
+- `timing.json`, `words.json`, `lyrics.srt`, `alignment.json` – tidskoder per linje og per ord (stable-ts small + demucs)
 - `beats.json` – taktslag (librosa), brukes til pulserende lys
 - `make_video.py` – tegner videoen (gjenbruker tegnefunksjoner fra `../den-minste-motoren/`)
 
