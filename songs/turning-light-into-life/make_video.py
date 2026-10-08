@@ -657,8 +657,10 @@ def karaoke(ctx, l, t, size, y):
             wd = l["words"][wi]; wi += 1
             prog = clamp((t - wd["start"]) / max(0.08, wd["end"] - wd["start"]))
             prev_end = wd["end"]
-        else:   # korstemme i parentes / tankestrek: lyser opp etter forrige ord
-            prog = 1.0 if t >= prev_end + (0.25 if paren else 0) else 0.0
+        elif paren:   # korstemme i parentes: fylles mellom siste sungne ord og slutten av linja
+            prog = clamp((t - prev_end - 0.15) / max(0.3, l["t1"] - prev_end - 0.5))
+        else:   # tankestrek o.l.
+            prog = 1.0 if t >= prev_end else 0.0
         col = (0.75, 0.85, 1.0) if paren else (1, 1, 1)
         ctx.move_to(x, y); rgba(ctx, col, 0.92); ctx.show_text(tok)
         if prog > 0:
