@@ -429,10 +429,14 @@
     ],
     [
      277.66,
-     296.42
+     281.0
     ],
     [
-     296.42,
+     284.74,
+     287.5
+    ],
+    [
+     293.88,
      296.9
     ]
    ],
@@ -440,7 +444,8 @@
     "The sun sends down its photons bright...",
     "In every leaf, in every night...",
     "I'm turning light into life...",
-    "Into life..."
+    "Into life...",
+    "Into life"
    ],
    "start": 267.82
   }
