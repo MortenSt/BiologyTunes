@@ -1365,7 +1365,7 @@
   ]
  },
  {
-  "line": "I'm turning light into life, into life",
+  "line": "I'm turning light into life",
   "words": [
    {
     "w": "I'm",
@@ -1388,19 +1388,9 @@
     "end": 159.12
    },
    {
-    "w": "life,",
+    "w": "life",
     "start": 159.12,
     "end": 160.06
-   },
-   {
-    "w": "into",
-    "start": 160.32,
-    "end": 160.32
-   },
-   {
-    "w": "life",
-    "start": 160.32,
-    "end": 160.32
    }
   ]
  },
@@ -2365,7 +2355,7 @@
   ]
  },
  {
-  "line": "I'm turning light into life, into life",
+  "line": "I'm turning light into life",
   "words": [
    {
     "w": "I'm",
@@ -2388,19 +2378,9 @@
     "end": 253.6
    },
    {
-    "w": "life,",
+    "w": "life",
     "start": 253.6,
     "end": 254.36
-   },
-   {
-    "w": "into",
-    "start": 254.48,
-    "end": 254.6
-   },
-   {
-    "w": "life",
-    "start": 254.6,
-    "end": 254.6
    }
   ]
  },
