@@ -1,0 +1,2652 @@
+[
+ {
+  "line": "Light arrives...",
+  "words": [
+   {
+    "w": "Light",
+    "start": 3.68,
+    "end": 3.68
+   },
+   {
+    "w": "arrives...",
+    "start": 3.68,
+    "end": 5.2
+   }
+  ]
+ },
+ {
+  "line": "From the sun...",
+  "words": [
+   {
+    "w": "From",
+    "start": 6.84,
+    "end": 7.02
+   },
+   {
+    "w": "the",
+    "start": 7.02,
+    "end": 7.72
+   },
+   {
+    "w": "sun...",
+    "start": 7.72,
+    "end": 8.3
+   }
+  ]
+ },
+ {
+  "line": "Something's about to begin...",
+  "words": [
+   {
+    "w": "Something's",
+    "start": 11.88,
+    "end": 12.88
+   },
+   {
+    "w": "about",
+    "start": 12.88,
+    "end": 13.2
+   },
+   {
+    "w": "to",
+    "start": 13.2,
+    "end": 13.7
+   },
+   {
+    "w": "begin...",
+    "start": 13.7,
+    "end": 15.5
+   }
+  ]
+ },
+ {
+  "line": "The sun sends down its photons bright",
+  "words": [
+   {
+    "w": "The",
+    "start": 22.38,
+    "end": 22.38
+   },
+   {
+    "w": "sun",
+    "start": 22.38,
+    "end": 22.6
+   },
+   {
+    "w": "sends",
+    "start": 22.6,
+    "end": 23.18
+   },
+   {
+    "w": "down",
+    "start": 23.18,
+    "end": 23.68
+   },
+   {
+    "w": "its",
+    "start": 23.68,
+    "end": 24.0
+   },
+   {
+    "w": "photons",
+    "start": 24.04,
+    "end": 24.52
+   },
+   {
+    "w": "bright",
+    "start": 24.52,
+    "end": 25.2
+   }
+  ]
+ },
+ {
+  "line": "Into the chloroplast, deep green light",
+  "words": [
+   {
+    "w": "Into",
+    "start": 25.2,
+    "end": 25.74
+   },
+   {
+    "w": "the",
+    "start": 25.74,
+    "end": 26.06
+   },
+   {
+    "w": "chloroplast,",
+    "start": 26.06,
+    "end": 27.31
+   },
+   {
+    "w": "deep",
+    "start": 27.92,
+    "end": 27.92
+   },
+   {
+    "w": "green",
+    "start": 27.92,
+    "end": 28.32
+   },
+   {
+    "w": "light",
+    "start": 28.32,
+    "end": 28.88
+   }
+  ]
+ },
+ {
+  "line": "Water molecules are waiting here",
+  "words": [
+   {
+    "w": "Water",
+    "start": 28.88,
+    "end": 29.58
+   },
+   {
+    "w": "molecules",
+    "start": 29.58,
+    "end": 30.28
+   },
+   {
+    "w": "are",
+    "start": 30.28,
+    "end": 30.6
+   },
+   {
+    "w": "waiting",
+    "start": 30.6,
+    "end": 30.98
+   },
+   {
+    "w": "here",
+    "start": 30.98,
+    "end": 31.82
+   }
+  ]
+ },
+ {
+  "line": "I split them open—oxygen's released to the atmosphere",
+  "words": [
+   {
+    "w": "I",
+    "start": 31.82,
+    "end": 32.34
+   },
+   {
+    "w": "split",
+    "start": 32.34,
+    "end": 32.58
+   },
+   {
+    "w": "them",
+    "start": 32.58,
+    "end": 33.08
+   },
+   {
+    "w": "open—oxygen's",
+    "start": 33.13,
+    "end": 34.78
+   },
+   {
+    "w": "released",
+    "start": 34.78,
+    "end": 35.1
+   },
+   {
+    "w": "to",
+    "start": 35.1,
+    "end": 35.76
+   },
+   {
+    "w": "the",
+    "start": 35.76,
+    "end": 36.12
+   },
+   {
+    "w": "atmosphere",
+    "start": 36.12,
+    "end": 36.68
+   }
+  ]
+ },
+ {
+  "line": "Electrons get excited, they jump and they spin",
+  "words": [
+   {
+    "w": "Electrons",
+    "start": 36.68,
+    "end": 37.42
+   },
+   {
+    "w": "get",
+    "start": 37.42,
+    "end": 37.74
+   },
+   {
+    "w": "excited,",
+    "start": 37.74,
+    "end": 38.42
+   },
+   {
+    "w": "they",
+    "start": 38.54,
+    "end": 38.56
+   },
+   {
+    "w": "jump",
+    "start": 38.56,
+    "end": 38.88
+   },
+   {
+    "w": "and",
+    "start": 38.88,
+    "end": 39.34
+   },
+   {
+    "w": "they",
+    "start": 39.34,
+    "end": 39.48
+   },
+   {
+    "w": "spin",
+    "start": 39.48,
+    "end": 39.76
+   }
+  ]
+ },
+ {
+  "line": "Thylakoid membranes pump protons within",
+  "words": [
+   {
+    "w": "Thylakoid",
+    "start": 39.76,
+    "end": 41.44
+   },
+   {
+    "w": "membranes",
+    "start": 41.44,
+    "end": 42.02
+   },
+   {
+    "w": "pump",
+    "start": 42.02,
+    "end": 42.26
+   },
+   {
+    "w": "protons",
+    "start": 42.26,
+    "end": 42.94
+   },
+   {
+    "w": "within",
+    "start": 42.94,
+    "end": 43.4
+   }
+  ]
+ },
+ {
+  "line": "Energy builds in the gradient steep",
+  "words": [
+   {
+    "w": "Energy",
+    "start": 43.4,
+    "end": 44.84
+   },
+   {
+    "w": "builds",
+    "start": 44.84,
+    "end": 45.48
+   },
+   {
+    "w": "in",
+    "start": 45.48,
+    "end": 45.78
+   },
+   {
+    "w": "the",
+    "start": 45.78,
+    "end": 45.96
+   },
+   {
+    "w": "gradient",
+    "start": 45.96,
+    "end": 46.56
+   },
+   {
+    "w": "steep",
+    "start": 46.56,
+    "end": 47.3
+   }
+  ]
+ },
+ {
+  "line": "This power will be stored, this power runs deep",
+  "words": [
+   {
+    "w": "This",
+    "start": 47.3,
+    "end": 47.78
+   },
+   {
+    "w": "power",
+    "start": 47.78,
+    "end": 48.36
+   },
+   {
+    "w": "will",
+    "start": 48.36,
+    "end": 48.68
+   },
+   {
+    "w": "be",
+    "start": 48.68,
+    "end": 48.84
+   },
+   {
+    "w": "stored,",
+    "start": 48.84,
+    "end": 49.46
+   },
+   {
+    "w": "this",
+    "start": 49.58,
+    "end": 49.58
+   },
+   {
+    "w": "power",
+    "start": 49.58,
+    "end": 50.18
+   },
+   {
+    "w": "runs",
+    "start": 50.18,
+    "end": 50.68
+   },
+   {
+    "w": "deep",
+    "start": 50.68,
+    "end": 51.08
+   }
+  ]
+ },
+ {
+  "line": "Light into power (Power!)",
+  "words": [
+   {
+    "w": "Light",
+    "start": 51.96,
+    "end": 52.58
+   },
+   {
+    "w": "into",
+    "start": 52.58,
+    "end": 52.58
+   },
+   {
+    "w": "power",
+    "start": 52.62,
+    "end": 53.16
+   }
+  ]
+ },
+ {
+  "line": "Chemistry happens (Happens!)",
+  "words": [
+   {
+    "w": "Chemistry",
+    "start": 53.16,
+    "end": 55.74
+   },
+   {
+    "w": "happens",
+    "start": 55.74,
+    "end": 57.14
+   }
+  ]
+ },
+ {
+  "line": "When the sun feeds the world...",
+  "words": [
+   {
+    "w": "When",
+    "start": 57.14,
+    "end": 58.68
+   },
+   {
+    "w": "the",
+    "start": 58.68,
+    "end": 58.98
+   },
+   {
+    "w": "sun",
+    "start": 58.98,
+    "end": 59.92
+   },
+   {
+    "w": "feeds",
+    "start": 59.92,
+    "end": 61.7
+   },
+   {
+    "w": "the",
+    "start": 61.7,
+    "end": 62.5
+   },
+   {
+    "w": "world...",
+    "start": 62.5,
+    "end": 64.85
+   }
+  ]
+ },
+ {
+  "line": "I'm turning light into life, into life",
+  "words": [
+   {
+    "w": "I'm",
+    "start": 65.72,
+    "end": 65.9
+   },
+   {
+    "w": "turning",
+    "start": 65.9,
+    "end": 66.16
+   },
+   {
+    "w": "light",
+    "start": 66.16,
+    "end": 66.6
+   },
+   {
+    "w": "into",
+    "start": 66.6,
+    "end": 67.08
+   },
+   {
+    "w": "life,",
+    "start": 67.08,
+    "end": 67.62
+   },
+   {
+    "w": "into",
+    "start": 68.24,
+    "end": 68.48
+   },
+   {
+    "w": "life",
+    "start": 68.48,
+    "end": 69.1
+   }
+  ]
+ },
+ {
+  "line": "Taking the sun's energy and making it right",
+  "words": [
+   {
+    "w": "Taking",
+    "start": 69.1,
+    "end": 69.6
+   },
+   {
+    "w": "the",
+    "start": 69.6,
+    "end": 69.92
+   },
+   {
+    "w": "sun's",
+    "start": 69.92,
+    "end": 70.52
+   },
+   {
+    "w": "energy",
+    "start": 70.52,
+    "end": 71.08
+   },
+   {
+    "w": "and",
+    "start": 71.08,
+    "end": 71.58
+   },
+   {
+    "w": "making",
+    "start": 71.58,
+    "end": 72.04
+   },
+   {
+    "w": "it",
+    "start": 72.04,
+    "end": 72.46
+   },
+   {
+    "w": "right",
+    "start": 72.46,
+    "end": 72.76
+   }
+  ]
+ },
+ {
+  "line": "Water, light, carbon dioxide—the elements dance",
+  "words": [
+   {
+    "w": "Water,",
+    "start": 72.76,
+    "end": 73.38
+   },
+   {
+    "w": "light,",
+    "start": 73.7,
+    "end": 73.82
+   },
+   {
+    "w": "carbon",
+    "start": 74.06,
+    "end": 74.2
+   },
+   {
+    "w": "dioxide—the",
+    "start": 74.2,
+    "end": 75.38
+   },
+   {
+    "w": "elements",
+    "start": 75.38,
+    "end": 75.98
+   },
+   {
+    "w": "dance",
+    "start": 75.98,
+    "end": 76.66
+   }
+  ]
+ },
+ {
+  "line": "Converting it into the bonds that sustain every plant",
+  "words": [
+   {
+    "w": "Converting",
+    "start": 76.66,
+    "end": 77.7
+   },
+   {
+    "w": "it",
+    "start": 77.7,
+    "end": 78.04
+   },
+   {
+    "w": "into",
+    "start": 78.04,
+    "end": 78.52
+   },
+   {
+    "w": "the",
+    "start": 78.52,
+    "end": 78.8
+   },
+   {
+    "w": "bonds",
+    "start": 78.8,
+    "end": 79.26
+   },
+   {
+    "w": "that",
+    "start": 79.26,
+    "end": 79.54
+   },
+   {
+    "w": "sustain",
+    "start": 79.54,
+    "end": 79.88
+   },
+   {
+    "w": "every",
+    "start": 79.88,
+    "end": 80.58
+   },
+   {
+    "w": "plant",
+    "start": 80.58,
+    "end": 80.92
+   }
+  ]
+ },
+ {
+  "line": "I'm turning light into life, into life",
+  "words": [
+   {
+    "w": "I'm",
+    "start": 80.92,
+    "end": 81.36
+   },
+   {
+    "w": "turning",
+    "start": 81.36,
+    "end": 81.7
+   },
+   {
+    "w": "light",
+    "start": 81.7,
+    "end": 81.94
+   },
+   {
+    "w": "into",
+    "start": 82.1,
+    "end": 82.72
+   },
+   {
+    "w": "life,",
+    "start": 82.72,
+    "end": 83.5
+   },
+   {
+    "w": "into",
+    "start": 83.5,
+    "end": 83.5
+   },
+   {
+    "w": "life",
+    "start": 83.5,
+    "end": 83.68
+   }
+  ]
+ },
+ {
+  "line": "The most important reaction, it powers the night",
+  "words": [
+   {
+    "w": "The",
+    "start": 83.68,
+    "end": 84.04
+   },
+   {
+    "w": "most",
+    "start": 84.04,
+    "end": 84.32
+   },
+   {
+    "w": "important",
+    "start": 84.34,
+    "end": 85.06
+   },
+   {
+    "w": "reaction,",
+    "start": 85.06,
+    "end": 85.96
+   },
+   {
+    "w": "it",
+    "start": 86.06,
+    "end": 86.14
+   },
+   {
+    "w": "powers",
+    "start": 86.14,
+    "end": 86.64
+   },
+   {
+    "w": "the",
+    "start": 86.64,
+    "end": 87.08
+   },
+   {
+    "w": "night",
+    "start": 87.08,
+    "end": 87.34
+   }
+  ]
+ },
+ {
+  "line": "Every leaf, every blade, every breath that you take",
+  "words": [
+   {
+    "w": "Every",
+    "start": 87.34,
+    "end": 87.84
+   },
+   {
+    "w": "leaf,",
+    "start": 87.84,
+    "end": 88.5
+   },
+   {
+    "w": "every",
+    "start": 88.56,
+    "end": 88.76
+   },
+   {
+    "w": "blade,",
+    "start": 88.76,
+    "end": 89.48
+   },
+   {
+    "w": "every",
+    "start": 89.48,
+    "end": 89.7
+   },
+   {
+    "w": "breath",
+    "start": 89.7,
+    "end": 90.06
+   },
+   {
+    "w": "that",
+    "start": 90.06,
+    "end": 90.38
+   },
+   {
+    "w": "you",
+    "start": 90.38,
+    "end": 90.6
+   },
+   {
+    "w": "take",
+    "start": 90.6,
+    "end": 91.14
+   }
+  ]
+ },
+ {
+  "line": "Comes from the light that I turn into life",
+  "words": [
+   {
+    "w": "Comes",
+    "start": 91.14,
+    "end": 91.86
+   },
+   {
+    "w": "from",
+    "start": 91.86,
+    "end": 92.22
+   },
+   {
+    "w": "the",
+    "start": 92.22,
+    "end": 92.5
+   },
+   {
+    "w": "light",
+    "start": 92.5,
+    "end": 92.84
+   },
+   {
+    "w": "that",
+    "start": 92.84,
+    "end": 93.22
+   },
+   {
+    "w": "I",
+    "start": 93.22,
+    "end": 93.52
+   },
+   {
+    "w": "turn",
+    "start": 93.52,
+    "end": 94.48
+   },
+   {
+    "w": "into",
+    "start": 94.48,
+    "end": 95.06
+   },
+   {
+    "w": "life",
+    "start": 95.06,
+    "end": 95.66
+   }
+  ]
+ },
+ {
+  "line": "Now ATP and NADPH carry the power",
+  "words": [
+   {
+    "w": "Now",
+    "start": 98.34,
+    "end": 98.62
+   },
+   {
+    "w": "ATP",
+    "start": 98.62,
+    "end": 99.08
+   },
+   {
+    "w": "and",
+    "start": 99.08,
+    "end": 99.62
+   },
+   {
+    "w": "NADPH",
+    "start": 99.62,
+    "end": 100.6
+   },
+   {
+    "w": "carry",
+    "start": 100.6,
+    "end": 101.24
+   },
+   {
+    "w": "the",
+    "start": 101.24,
+    "end": 101.5
+   },
+   {
+    "w": "power",
+    "start": 101.5,
+    "end": 102.18
+   }
+  ]
+ },
+ {
+  "line": "To the stroma, to complete the tower",
+  "words": [
+   {
+    "w": "To",
+    "start": 102.18,
+    "end": 103.1
+   },
+   {
+    "w": "the",
+    "start": 103.1,
+    "end": 103.32
+   },
+   {
+    "w": "stroma,",
+    "start": 103.32,
+    "end": 103.92
+   },
+   {
+    "w": "to",
+    "start": 104.02,
+    "end": 104.22
+   },
+   {
+    "w": "complete",
+    "start": 104.22,
+    "end": 104.8
+   },
+   {
+    "w": "the",
+    "start": 104.8,
+    "end": 105.18
+   },
+   {
+    "w": "tower",
+    "start": 105.2,
+    "end": 105.72
+   }
+  ]
+ },
+ {
+  "line": "RuBisCO enzyme—the most abundant on Earth",
+  "words": [
+   {
+    "w": "RuBisCO",
+    "start": 105.72,
+    "end": 106.8
+   },
+   {
+    "w": "enzyme—the",
+    "start": 106.8,
+    "end": 107.74
+   },
+   {
+    "w": "most",
+    "start": 107.74,
+    "end": 107.92
+   },
+   {
+    "w": "abundant",
+    "start": 107.92,
+    "end": 108.42
+   },
+   {
+    "w": "on",
+    "start": 108.42,
+    "end": 108.9
+   },
+   {
+    "w": "Earth",
+    "start": 108.9,
+    "end": 109.18
+   }
+  ]
+ },
+ {
+  "line": "Captures the carbon, gives glucose its birth",
+  "words": [
+   {
+    "w": "Captures",
+    "start": 109.18,
+    "end": 110.48
+   },
+   {
+    "w": "the",
+    "start": 110.48,
+    "end": 110.84
+   },
+   {
+    "w": "carbon,",
+    "start": 110.84,
+    "end": 111.18
+   },
+   {
+    "w": "gives",
+    "start": 111.18,
+    "end": 111.54
+   },
+   {
+    "w": "glucose",
+    "start": 112.26,
+    "end": 112.26
+   },
+   {
+    "w": "its",
+    "start": 112.26,
+    "end": 112.66
+   },
+   {
+    "w": "birth",
+    "start": 112.66,
+    "end": 113.0
+   }
+  ]
+ },
+ {
+  "line": "Carbon fixation, three steps in a dance",
+  "words": [
+   {
+    "w": "Carbon",
+    "start": 113.0,
+    "end": 113.92
+   },
+   {
+    "w": "fixation,",
+    "start": 113.92,
+    "end": 114.92
+   },
+   {
+    "w": "three",
+    "start": 115.02,
+    "end": 115.14
+   },
+   {
+    "w": "steps",
+    "start": 115.14,
+    "end": 115.34
+   },
+   {
+    "w": "in",
+    "start": 115.34,
+    "end": 115.94
+   },
+   {
+    "w": "a",
+    "start": 115.94,
+    "end": 116.14
+   },
+   {
+    "w": "dance",
+    "start": 116.14,
+    "end": 116.5
+   }
+  ]
+ },
+ {
+  "line": "A cycle that spirals, that gives life its chance",
+  "words": [
+   {
+    "w": "A",
+    "start": 116.5,
+    "end": 116.86
+   },
+   {
+    "w": "cycle",
+    "start": 116.86,
+    "end": 117.54
+   },
+   {
+    "w": "that",
+    "start": 117.54,
+    "end": 117.94
+   },
+   {
+    "w": "spirals,",
+    "start": 117.94,
+    "end": 118.62
+   },
+   {
+    "w": "that",
+    "start": 118.78,
+    "end": 118.78
+   },
+   {
+    "w": "gives",
+    "start": 118.78,
+    "end": 119.14
+   },
+   {
+    "w": "life",
+    "start": 119.14,
+    "end": 119.5
+   },
+   {
+    "w": "its",
+    "start": 119.5,
+    "end": 119.72
+   },
+   {
+    "w": "chance",
+    "start": 119.72,
+    "end": 120.06
+   }
+  ]
+ },
+ {
+  "line": "Six turns of the wheel, one glucose born free",
+  "words": [
+   {
+    "w": "Six",
+    "start": 120.06,
+    "end": 120.5
+   },
+   {
+    "w": "turns",
+    "start": 120.5,
+    "end": 121.02
+   },
+   {
+    "w": "of",
+    "start": 121.02,
+    "end": 121.36
+   },
+   {
+    "w": "the",
+    "start": 121.36,
+    "end": 121.62
+   },
+   {
+    "w": "wheel,",
+    "start": 121.62,
+    "end": 122.1
+   },
+   {
+    "w": "one",
+    "start": 122.34,
+    "end": 122.46
+   },
+   {
+    "w": "glucose",
+    "start": 122.46,
+    "end": 122.78
+   },
+   {
+    "w": "born",
+    "start": 122.78,
+    "end": 123.46
+   },
+   {
+    "w": "free",
+    "start": 123.46,
+    "end": 123.94
+   }
+  ]
+ },
+ {
+  "line": "The Calvin Cycle's completed, it's energy",
+  "words": [
+   {
+    "w": "The",
+    "start": 123.94,
+    "end": 124.22
+   },
+   {
+    "w": "Calvin",
+    "start": 124.22,
+    "end": 124.78
+   },
+   {
+    "w": "Cycle's",
+    "start": 124.78,
+    "end": 125.44
+   },
+   {
+    "w": "completed,",
+    "start": 125.44,
+    "end": 125.54
+   },
+   {
+    "w": "it's",
+    "start": 126.24,
+    "end": 126.42
+   },
+   {
+    "w": "energy",
+    "start": 126.42,
+    "end": 127.04
+   }
+  ]
+ },
+ {
+  "line": "Dark reactions happen (Happen!)",
+  "words": [
+   {
+    "w": "Dark",
+    "start": 127.04,
+    "end": 127.8
+   },
+   {
+    "w": "reactions",
+    "start": 127.8,
+    "end": 128.88
+   },
+   {
+    "w": "happen",
+    "start": 128.88,
+    "end": 129.5
+   }
+  ]
+ },
+ {
+  "line": "Without any light now (Light now!)",
+  "words": [
+   {
+    "w": "Without",
+    "start": 129.5,
+    "end": 131.44
+   },
+   {
+    "w": "any",
+    "start": 131.44,
+    "end": 132.58
+   },
+   {
+    "w": "light",
+    "start": 132.58,
+    "end": 133.04
+   },
+   {
+    "w": "now",
+    "start": 133.04,
+    "end": 133.6
+   }
+  ]
+ },
+ {
+  "line": "But the sun made it all...",
+  "words": [
+   {
+    "w": "But",
+    "start": 133.6,
+    "end": 135.12
+   },
+   {
+    "w": "the",
+    "start": 135.12,
+    "end": 135.38
+   },
+   {
+    "w": "sun",
+    "start": 135.38,
+    "end": 136.32
+   },
+   {
+    "w": "made",
+    "start": 136.32,
+    "end": 138.34
+   },
+   {
+    "w": "it",
+    "start": 138.34,
+    "end": 138.88
+   },
+   {
+    "w": "all...",
+    "start": 141.44,
+    "end": 141.44
+   }
+  ]
+ },
+ {
+  "line": "I'm turning light into life, into life",
+  "words": [
+   {
+    "w": "I'm",
+    "start": 141.96,
+    "end": 142.2
+   },
+   {
+    "w": "turning",
+    "start": 142.2,
+    "end": 142.56
+   },
+   {
+    "w": "light",
+    "start": 142.56,
+    "end": 142.96
+   },
+   {
+    "w": "into",
+    "start": 142.96,
+    "end": 143.44
+   },
+   {
+    "w": "life,",
+    "start": 143.44,
+    "end": 144.08
+   },
+   {
+    "w": "into",
+    "start": 144.56,
+    "end": 144.78
+   },
+   {
+    "w": "life",
+    "start": 144.78,
+    "end": 145.44
+   }
+  ]
+ },
+ {
+  "line": "Taking the sun's energy and making it right",
+  "words": [
+   {
+    "w": "Taking",
+    "start": 145.44,
+    "end": 145.9
+   },
+   {
+    "w": "the",
+    "start": 145.9,
+    "end": 146.24
+   },
+   {
+    "w": "sun's",
+    "start": 146.24,
+    "end": 146.84
+   },
+   {
+    "w": "energy",
+    "start": 146.84,
+    "end": 147.38
+   },
+   {
+    "w": "and",
+    "start": 147.38,
+    "end": 147.82
+   },
+   {
+    "w": "making",
+    "start": 147.82,
+    "end": 148.44
+   },
+   {
+    "w": "it",
+    "start": 148.44,
+    "end": 148.8
+   },
+   {
+    "w": "right",
+    "start": 148.8,
+    "end": 149.14
+   }
+  ]
+ },
+ {
+  "line": "Water, light, carbon dioxide—the elements dance",
+  "words": [
+   {
+    "w": "Water,",
+    "start": 149.14,
+    "end": 149.8
+   },
+   {
+    "w": "light,",
+    "start": 150.04,
+    "end": 150.14
+   },
+   {
+    "w": "carbon",
+    "start": 150.4,
+    "end": 150.54
+   },
+   {
+    "w": "dioxide—the",
+    "start": 150.54,
+    "end": 151.64
+   },
+   {
+    "w": "elements",
+    "start": 151.64,
+    "end": 152.28
+   },
+   {
+    "w": "dance",
+    "start": 152.28,
+    "end": 152.98
+   }
+  ]
+ },
+ {
+  "line": "Converting it into the bonds that sustain every plant",
+  "words": [
+   {
+    "w": "Converting",
+    "start": 152.98,
+    "end": 153.96
+   },
+   {
+    "w": "it",
+    "start": 153.96,
+    "end": 154.32
+   },
+   {
+    "w": "into",
+    "start": 154.32,
+    "end": 154.8
+   },
+   {
+    "w": "the",
+    "start": 154.8,
+    "end": 155.1
+   },
+   {
+    "w": "bonds",
+    "start": 155.1,
+    "end": 155.58
+   },
+   {
+    "w": "that",
+    "start": 155.58,
+    "end": 155.84
+   },
+   {
+    "w": "sustain",
+    "start": 156.08,
+    "end": 156.18
+   },
+   {
+    "w": "every",
+    "start": 156.18,
+    "end": 156.9
+   },
+   {
+    "w": "plant",
+    "start": 156.9,
+    "end": 157.22
+   }
+  ]
+ },
+ {
+  "line": "I'm turning light into life, into life",
+  "words": [
+   {
+    "w": "I'm",
+    "start": 157.22,
+    "end": 157.64
+   },
+   {
+    "w": "turning",
+    "start": 157.64,
+    "end": 158.0
+   },
+   {
+    "w": "light",
+    "start": 158.0,
+    "end": 158.4
+   },
+   {
+    "w": "into",
+    "start": 158.4,
+    "end": 159.12
+   },
+   {
+    "w": "life,",
+    "start": 159.12,
+    "end": 160.06
+   },
+   {
+    "w": "into",
+    "start": 160.32,
+    "end": 160.32
+   },
+   {
+    "w": "life",
+    "start": 160.32,
+    "end": 160.32
+   }
+  ]
+ },
+ {
+  "line": "The most important reaction, it feeds all the night",
+  "words": [
+   {
+    "w": "The",
+    "start": 160.32,
+    "end": 160.32
+   },
+   {
+    "w": "most",
+    "start": 160.32,
+    "end": 160.62
+   },
+   {
+    "w": "important",
+    "start": 160.62,
+    "end": 161.36
+   },
+   {
+    "w": "reaction,",
+    "start": 161.36,
+    "end": 161.84
+   },
+   {
+    "w": "it",
+    "start": 161.84,
+    "end": 162.4
+   },
+   {
+    "w": "feeds",
+    "start": 162.46,
+    "end": 162.8
+   },
+   {
+    "w": "all",
+    "start": 162.8,
+    "end": 163.16
+   },
+   {
+    "w": "the",
+    "start": 163.16,
+    "end": 163.28
+   },
+   {
+    "w": "night",
+    "start": 163.28,
+    "end": 163.74
+   }
+  ]
+ },
+ {
+  "line": "Every fruit, every grain, every molecule made",
+  "words": [
+   {
+    "w": "Every",
+    "start": 163.74,
+    "end": 164.14
+   },
+   {
+    "w": "fruit,",
+    "start": 164.14,
+    "end": 164.84
+   },
+   {
+    "w": "every",
+    "start": 165.0,
+    "end": 165.1
+   },
+   {
+    "w": "grain,",
+    "start": 165.1,
+    "end": 165.9
+   },
+   {
+    "w": "every",
+    "start": 165.9,
+    "end": 166.04
+   },
+   {
+    "w": "molecule",
+    "start": 166.04,
+    "end": 166.74
+   },
+   {
+    "w": "made",
+    "start": 166.74,
+    "end": 167.4
+   }
+  ]
+ },
+ {
+  "line": "Comes from the light that I turn into life",
+  "words": [
+   {
+    "w": "Comes",
+    "start": 167.4,
+    "end": 168.14
+   },
+   {
+    "w": "from",
+    "start": 168.14,
+    "end": 168.54
+   },
+   {
+    "w": "the",
+    "start": 168.54,
+    "end": 168.8
+   },
+   {
+    "w": "light",
+    "start": 168.8,
+    "end": 168.86
+   },
+   {
+    "w": "that",
+    "start": 169.1,
+    "end": 169.5
+   },
+   {
+    "w": "I",
+    "start": 169.5,
+    "end": 169.8
+   },
+   {
+    "w": "turn",
+    "start": 169.8,
+    "end": 170.74
+   },
+   {
+    "w": "into",
+    "start": 170.74,
+    "end": 171.36
+   },
+   {
+    "w": "life",
+    "start": 171.36,
+    "end": 172.6
+   }
+  ]
+ },
+ {
+  "line": "Three-point-five billion years ago",
+  "words": [
+   {
+    "w": "Three-point-five",
+    "start": 175.58,
+    "end": 176.54
+   },
+   {
+    "w": "billion",
+    "start": 176.54,
+    "end": 177.02
+   },
+   {
+    "w": "years",
+    "start": 177.02,
+    "end": 177.56
+   },
+   {
+    "w": "ago",
+    "start": 177.56,
+    "end": 178.12
+   }
+  ]
+ },
+ {
+  "line": "Cyanobacteria began the show",
+  "words": [
+   {
+    "w": "Cyanobacteria",
+    "start": 179.11,
+    "end": 180.26
+   },
+   {
+    "w": "began",
+    "start": 180.26,
+    "end": 180.72
+   },
+   {
+    "w": "the",
+    "start": 180.72,
+    "end": 181.32
+   },
+   {
+    "w": "show",
+    "start": 181.32,
+    "end": 181.76
+   }
+  ]
+ },
+ {
+  "line": "They split the water, released the O₂",
+  "words": [
+   {
+    "w": "They",
+    "start": 181.76,
+    "end": 182.08
+   },
+   {
+    "w": "split",
+    "start": 182.08,
+    "end": 182.26
+   },
+   {
+    "w": "the",
+    "start": 182.26,
+    "end": 182.62
+   },
+   {
+    "w": "water,",
+    "start": 182.62,
+    "end": 183.24
+   },
+   {
+    "w": "released",
+    "start": 183.74,
+    "end": 183.94
+   },
+   {
+    "w": "the",
+    "start": 183.94,
+    "end": 184.26
+   },
+   {
+    "w": "O2",
+    "start": 184.26,
+    "end": 184.98
+   }
+  ]
+ },
+ {
+  "line": "That poisoned the world—but it gave rise to you",
+  "words": [
+   {
+    "w": "That",
+    "start": 184.98,
+    "end": 185.88
+   },
+   {
+    "w": "poisoned",
+    "start": 185.88,
+    "end": 186.54
+   },
+   {
+    "w": "the",
+    "start": 186.54,
+    "end": 186.98
+   },
+   {
+    "w": "world—but",
+    "start": 186.98,
+    "end": 187.64
+   },
+   {
+    "w": "it",
+    "start": 187.64,
+    "end": 187.86
+   },
+   {
+    "w": "gave",
+    "start": 187.86,
+    "end": 188.02
+   },
+   {
+    "w": "rise",
+    "start": 188.02,
+    "end": 188.44
+   },
+   {
+    "w": "to",
+    "start": 188.44,
+    "end": 188.72
+   },
+   {
+    "w": "you",
+    "start": 188.72,
+    "end": 189.08
+   }
+  ]
+ },
+ {
+  "line": "The Great Oxidation Event, a turning point in time",
+  "words": [
+   {
+    "w": "The",
+    "start": 189.08,
+    "end": 189.38
+   },
+   {
+    "w": "Great",
+    "start": 189.38,
+    "end": 189.66
+   },
+   {
+    "w": "Oxidation",
+    "start": 189.66,
+    "end": 190.7
+   },
+   {
+    "w": "Event,",
+    "start": 190.7,
+    "end": 191.3
+   },
+   {
+    "w": "a",
+    "start": 191.54,
+    "end": 191.62
+   },
+   {
+    "w": "turning",
+    "start": 191.62,
+    "end": 191.98
+   },
+   {
+    "w": "point",
+    "start": 191.98,
+    "end": 192.36
+   },
+   {
+    "w": "in",
+    "start": 192.36,
+    "end": 192.58
+   },
+   {
+    "w": "time",
+    "start": 192.58,
+    "end": 193.02
+   }
+  ]
+ },
+ {
+  "line": "Oxygen filled the sky; complex life could climb",
+  "words": [
+   {
+    "w": "Oxygen",
+    "start": 193.02,
+    "end": 194.08
+   },
+   {
+    "w": "filled",
+    "start": 194.08,
+    "end": 194.38
+   },
+   {
+    "w": "the",
+    "start": 194.38,
+    "end": 194.6
+   },
+   {
+    "w": "sky;",
+    "start": 194.6,
+    "end": 194.82
+   },
+   {
+    "w": "complex",
+    "start": 194.82,
+    "end": 195.62
+   },
+   {
+    "w": "life",
+    "start": 195.62,
+    "end": 195.96
+   },
+   {
+    "w": "could",
+    "start": 195.96,
+    "end": 196.14
+   },
+   {
+    "w": "climb",
+    "start": 196.14,
+    "end": 196.6
+   }
+  ]
+ },
+ {
+  "line": "And every breath you take, every heartbeat strong",
+  "words": [
+   {
+    "w": "And",
+    "start": 196.6,
+    "end": 196.94
+   },
+   {
+    "w": "every",
+    "start": 196.94,
+    "end": 197.52
+   },
+   {
+    "w": "breath",
+    "start": 197.52,
+    "end": 197.76
+   },
+   {
+    "w": "you",
+    "start": 197.76,
+    "end": 198.04
+   },
+   {
+    "w": "take,",
+    "start": 198.04,
+    "end": 198.6
+   },
+   {
+    "w": "every",
+    "start": 198.6,
+    "end": 198.94
+   },
+   {
+    "w": "heartbeat",
+    "start": 198.94,
+    "end": 199.44
+   },
+   {
+    "w": "strong",
+    "start": 199.44,
+    "end": 200.18
+   }
+  ]
+ },
+ {
+  "line": "Comes from the photosynthesis song",
+  "words": [
+   {
+    "w": "Comes",
+    "start": 200.18,
+    "end": 200.9
+   },
+   {
+    "w": "from",
+    "start": 200.9,
+    "end": 201.3
+   },
+   {
+    "w": "the",
+    "start": 201.3,
+    "end": 201.7
+   },
+   {
+    "w": "photosynthesis",
+    "start": 201.7,
+    "end": 203.12
+   },
+   {
+    "w": "song",
+    "start": 203.12,
+    "end": 204.12
+   }
+  ]
+ },
+ {
+  "line": "One hundred twenty billion tons of carbon each year",
+  "words": [
+   {
+    "w": "One",
+    "start": 204.36,
+    "end": 204.42
+   },
+   {
+    "w": "hundred",
+    "start": 204.42,
+    "end": 204.72
+   },
+   {
+    "w": "twenty",
+    "start": 204.72,
+    "end": 205.16
+   },
+   {
+    "w": "billion",
+    "start": 205.16,
+    "end": 205.68
+   },
+   {
+    "w": "tons",
+    "start": 205.68,
+    "end": 205.94
+   },
+   {
+    "w": "of",
+    "start": 205.94,
+    "end": 206.18
+   },
+   {
+    "w": "carbon",
+    "start": 206.18,
+    "end": 206.54
+   },
+   {
+    "w": "each",
+    "start": 206.54,
+    "end": 206.94
+   },
+   {
+    "w": "year",
+    "start": 206.94,
+    "end": 207.36
+   }
+  ]
+ },
+ {
+  "line": "Moving through chloroplasts around the sphere",
+  "words": [
+   {
+    "w": "Moving",
+    "start": 207.36,
+    "end": 208.3
+   },
+   {
+    "w": "through",
+    "start": 208.3,
+    "end": 208.76
+   },
+   {
+    "w": "chloroplasts",
+    "start": 208.76,
+    "end": 209.68
+   },
+   {
+    "w": "around",
+    "start": 209.68,
+    "end": 210.12
+   },
+   {
+    "w": "the",
+    "start": 210.12,
+    "end": 210.48
+   },
+   {
+    "w": "sphere",
+    "start": 210.48,
+    "end": 210.76
+   }
+  ]
+ },
+ {
+  "line": "Eleven percent efficient, yet it runs the whole game",
+  "words": [
+   {
+    "w": "Eleven",
+    "start": 210.76,
+    "end": 211.3
+   },
+   {
+    "w": "percent",
+    "start": 211.3,
+    "end": 212.0
+   },
+   {
+    "w": "efficient,",
+    "start": 212.0,
+    "end": 212.9
+   },
+   {
+    "w": "yet",
+    "start": 213.2,
+    "end": 213.24
+   },
+   {
+    "w": "it",
+    "start": 213.24,
+    "end": 213.44
+   },
+   {
+    "w": "runs",
+    "start": 213.44,
+    "end": 213.66
+   },
+   {
+    "w": "the",
+    "start": 213.66,
+    "end": 213.92
+   },
+   {
+    "w": "whole",
+    "start": 213.92,
+    "end": 214.24
+   },
+   {
+    "w": "game",
+    "start": 214.24,
+    "end": 214.74
+   }
+  ]
+ },
+ {
+  "line": "Every food chain, every ecosystem, bears this name",
+  "words": [
+   {
+    "w": "Every",
+    "start": 214.74,
+    "end": 215.2
+   },
+   {
+    "w": "food",
+    "start": 215.2,
+    "end": 215.56
+   },
+   {
+    "w": "chain,",
+    "start": 215.56,
+    "end": 216.34
+   },
+   {
+    "w": "every",
+    "start": 216.36,
+    "end": 216.62
+   },
+   {
+    "w": "ecosystem,",
+    "start": 216.62,
+    "end": 217.1
+   },
+   {
+    "w": "bears",
+    "start": 217.1,
+    "end": 217.74
+   },
+   {
+    "w": "this",
+    "start": 217.74,
+    "end": 217.98
+   },
+   {
+    "w": "name",
+    "start": 217.98,
+    "end": 218.36
+   }
+  ]
+ },
+ {
+  "line": "From the tiniest algae to the tallest tree",
+  "words": [
+   {
+    "w": "From",
+    "start": 218.36,
+    "end": 218.62
+   },
+   {
+    "w": "the",
+    "start": 218.62,
+    "end": 218.88
+   },
+   {
+    "w": "tiniest",
+    "start": 218.88,
+    "end": 219.52
+   },
+   {
+    "w": "algae",
+    "start": 219.52,
+    "end": 219.96
+   },
+   {
+    "w": "to",
+    "start": 219.96,
+    "end": 220.46
+   },
+   {
+    "w": "the",
+    "start": 220.46,
+    "end": 220.72
+   },
+   {
+    "w": "tallest",
+    "start": 220.72,
+    "end": 221.06
+   },
+   {
+    "w": "tree",
+    "start": 221.06,
+    "end": 221.68
+   }
+  ]
+ },
+ {
+  "line": "This process is the engine—of you, of me",
+  "words": [
+   {
+    "w": "This",
+    "start": 221.68,
+    "end": 222.16
+   },
+   {
+    "w": "process",
+    "start": 222.32,
+    "end": 222.82
+   },
+   {
+    "w": "is",
+    "start": 222.82,
+    "end": 223.22
+   },
+   {
+    "w": "the",
+    "start": 223.22,
+    "end": 223.46
+   },
+   {
+    "w": "engine—of",
+    "start": 223.46,
+    "end": 224.14
+   },
+   {
+    "w": "you,",
+    "start": 224.14,
+    "end": 224.42
+   },
+   {
+    "w": "of",
+    "start": 224.5,
+    "end": 224.9
+   },
+   {
+    "w": "me",
+    "start": 224.9,
+    "end": 225.3
+   }
+  ]
+ },
+ {
+  "line": "Turning photons into glucose, O₂ into the air",
+  "words": [
+   {
+    "w": "Turning",
+    "start": 225.3,
+    "end": 225.8
+   },
+   {
+    "w": "photons",
+    "start": 225.8,
+    "end": 226.38
+   },
+   {
+    "w": "into",
+    "start": 226.38,
+    "end": 226.92
+   },
+   {
+    "w": "glucose,",
+    "start": 226.92,
+    "end": 227.34
+   },
+   {
+    "w": "O2",
+    "start": 227.54,
+    "end": 227.98
+   },
+   {
+    "w": "into",
+    "start": 227.98,
+    "end": 228.46
+   },
+   {
+    "w": "the",
+    "start": 228.46,
+    "end": 228.86
+   },
+   {
+    "w": "air",
+    "start": 228.86,
+    "end": 229.2
+   }
+  ]
+ },
+ {
+  "line": "Life depends on photosynthesis everywhere",
+  "words": [
+   {
+    "w": "Life",
+    "start": 229.2,
+    "end": 229.52
+   },
+   {
+    "w": "depends",
+    "start": 229.52,
+    "end": 229.98
+   },
+   {
+    "w": "on",
+    "start": 229.98,
+    "end": 230.28
+   },
+   {
+    "w": "photosynthesis",
+    "start": 230.28,
+    "end": 230.96
+   },
+   {
+    "w": "everywhere",
+    "start": 230.96,
+    "end": 232.06
+   }
+  ]
+ },
+ {
+  "line": "I'm turning light into life, into life",
+  "words": [
+   {
+    "w": "I'm",
+    "start": 235.36,
+    "end": 236.56
+   },
+   {
+    "w": "turning",
+    "start": 236.56,
+    "end": 236.9
+   },
+   {
+    "w": "light",
+    "start": 236.9,
+    "end": 237.28
+   },
+   {
+    "w": "into",
+    "start": 237.28,
+    "end": 237.76
+   },
+   {
+    "w": "life,",
+    "start": 237.76,
+    "end": 238.64
+   },
+   {
+    "w": "into",
+    "start": 238.9,
+    "end": 239.12
+   },
+   {
+    "w": "life",
+    "start": 239.12,
+    "end": 239.76
+   }
+  ]
+ },
+ {
+  "line": "The sun's energy powering everything right",
+  "words": [
+   {
+    "w": "The",
+    "start": 239.76,
+    "end": 240.12
+   },
+   {
+    "w": "sun's",
+    "start": 240.12,
+    "end": 240.72
+   },
+   {
+    "w": "energy",
+    "start": 240.72,
+    "end": 241.16
+   },
+   {
+    "w": "powering",
+    "start": 241.16,
+    "end": 242.24
+   },
+   {
+    "w": "everything",
+    "start": 242.24,
+    "end": 242.9
+   },
+   {
+    "w": "right",
+    "start": 242.9,
+    "end": 243.46
+   }
+  ]
+ },
+ {
+  "line": "Water, light, carbon dioxide—a planetary dance",
+  "words": [
+   {
+    "w": "Water,",
+    "start": 243.46,
+    "end": 244.1
+   },
+   {
+    "w": "light,",
+    "start": 244.1,
+    "end": 244.44
+   },
+   {
+    "w": "carbon",
+    "start": 244.68,
+    "end": 244.88
+   },
+   {
+    "w": "dioxide—a",
+    "start": 244.88,
+    "end": 246.08
+   },
+   {
+    "w": "planetary",
+    "start": 246.08,
+    "end": 246.64
+   },
+   {
+    "w": "dance",
+    "start": 246.64,
+    "end": 247.42
+   }
+  ]
+ },
+ {
+  "line": "This is the reaction that gives all life its chance",
+  "words": [
+   {
+    "w": "This",
+    "start": 247.42,
+    "end": 248.0
+   },
+   {
+    "w": "is",
+    "start": 248.06,
+    "end": 248.32
+   },
+   {
+    "w": "the",
+    "start": 248.32,
+    "end": 248.6
+   },
+   {
+    "w": "reaction",
+    "start": 248.6,
+    "end": 249.1
+   },
+   {
+    "w": "that",
+    "start": 249.1,
+    "end": 249.48
+   },
+   {
+    "w": "gives",
+    "start": 249.48,
+    "end": 249.86
+   },
+   {
+    "w": "all",
+    "start": 249.86,
+    "end": 250.36
+   },
+   {
+    "w": "life",
+    "start": 250.36,
+    "end": 250.76
+   },
+   {
+    "w": "its",
+    "start": 250.76,
+    "end": 251.02
+   },
+   {
+    "w": "chance",
+    "start": 251.02,
+    "end": 251.44
+   }
+  ]
+ },
+ {
+  "line": "I'm turning light into life, into life",
+  "words": [
+   {
+    "w": "I'm",
+    "start": 251.44,
+    "end": 251.98
+   },
+   {
+    "w": "turning",
+    "start": 251.98,
+    "end": 252.3
+   },
+   {
+    "w": "light",
+    "start": 252.3,
+    "end": 252.74
+   },
+   {
+    "w": "into",
+    "start": 252.74,
+    "end": 253.6
+   },
+   {
+    "w": "life,",
+    "start": 253.6,
+    "end": 254.36
+   },
+   {
+    "w": "into",
+    "start": 254.48,
+    "end": 254.6
+   },
+   {
+    "w": "life",
+    "start": 254.6,
+    "end": 254.6
+   }
+  ]
+ },
+ {
+  "line": "The most fundamental force—the cosmic light",
+  "words": [
+   {
+    "w": "The",
+    "start": 254.6,
+    "end": 254.6
+   },
+   {
+    "w": "most",
+    "start": 254.6,
+    "end": 254.96
+   },
+   {
+    "w": "fundamental",
+    "start": 254.96,
+    "end": 255.62
+   },
+   {
+    "w": "force—the",
+    "start": 255.62,
+    "end": 256.76
+   },
+   {
+    "w": "cosmic",
+    "start": 256.76,
+    "end": 257.28
+   },
+   {
+    "w": "light",
+    "start": 257.28,
+    "end": 258.0
+   }
+  ]
+ },
+ {
+  "line": "That ancient reaction still happening today",
+  "words": [
+   {
+    "w": "That",
+    "start": 258.0,
+    "end": 258.38
+   },
+   {
+    "w": "ancient",
+    "start": 258.38,
+    "end": 259.02
+   },
+   {
+    "w": "reaction",
+    "start": 259.02,
+    "end": 259.72
+   },
+   {
+    "w": "still",
+    "start": 259.72,
+    "end": 260.3
+   },
+   {
+    "w": "happening",
+    "start": 260.3,
+    "end": 261.06
+   },
+   {
+    "w": "today",
+    "start": 261.06,
+    "end": 261.74
+   }
+  ]
+ },
+ {
+  "line": "Turns the sun's gift into the world's way",
+  "words": [
+   {
+    "w": "Turns",
+    "start": 261.74,
+    "end": 262.48
+   },
+   {
+    "w": "the",
+    "start": 262.48,
+    "end": 262.76
+   },
+   {
+    "w": "sun's",
+    "start": 263.14,
+    "end": 263.26
+   },
+   {
+    "w": "gift",
+    "start": 263.26,
+    "end": 263.5
+   },
+   {
+    "w": "into",
+    "start": 263.5,
+    "end": 264.24
+   },
+   {
+    "w": "the",
+    "start": 264.24,
+    "end": 265.06
+   },
+   {
+    "w": "world's",
+    "start": 265.06,
+    "end": 266.1
+   },
+   {
+    "w": "way",
+    "start": 266.1,
+    "end": 267.82
+   }
+  ]
+ },
+ {
+  "line": "The sun sends down its photons bright...",
+  "words": [
+   {
+    "w": "The",
+    "start": 267.82,
+    "end": 269.4
+   },
+   {
+    "w": "sun",
+    "start": 269.4,
+    "end": 269.84
+   },
+   {
+    "w": "sends",
+    "start": 269.84,
+    "end": 270.34
+   },
+   {
+    "w": "down",
+    "start": 270.34,
+    "end": 270.9
+   },
+   {
+    "w": "its",
+    "start": 270.9,
+    "end": 271.12
+   },
+   {
+    "w": "photons",
+    "start": 271.18,
+    "end": 271.52
+   },
+   {
+    "w": "bright...",
+    "start": 271.52,
+    "end": 272.68
+   }
+  ]
+ },
+ {
+  "line": "In every leaf, in every night...",
+  "words": [
+   {
+    "w": "In",
+    "start": 272.86,
+    "end": 272.86
+   },
+   {
+    "w": "every",
+    "start": 272.86,
+    "end": 273.8
+   },
+   {
+    "w": "leaf,",
+    "start": 273.8,
+    "end": 274.44
+   },
+   {
+    "w": "in",
+    "start": 274.76,
+    "end": 274.8
+   },
+   {
+    "w": "every",
+    "start": 274.8,
+    "end": 275.62
+   },
+   {
+    "w": "night...",
+    "start": 275.62,
+    "end": 277.64
+   }
+  ]
+ },
+ {
+  "line": "I'm turning light into life...",
+  "words": [
+   {
+    "w": "I'm",
+    "start": 277.66,
+    "end": 278.14
+   },
+   {
+    "w": "turning",
+    "start": 278.14,
+    "end": 278.52
+   },
+   {
+    "w": "light",
+    "start": 278.52,
+    "end": 279.16
+   },
+   {
+    "w": "into",
+    "start": 284.74,
+    "end": 287.5
+   },
+   {
+    "w": "life...",
+    "start": 293.88,
+    "end": 296.42
+   }
+  ]
+ },
+ {
+  "line": "Into life...",
+  "words": [
+   {
+    "w": "Into",
+    "start": 296.42,
+    "end": 296.42
+   },
+   {
+    "w": "life...",
+    "start": 296.42,
+    "end": 296.9
+   }
+  ]
+ }
+]
