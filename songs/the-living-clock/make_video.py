@@ -586,7 +586,7 @@ def render(t):
         d = t - s[1]
         if -0.3 < d < 0.3:
             rgba(ctx, (0, 0, 0), 0.6 * (1 - abs(d) / 0.3)); ctx.paint()
-    if (k != "intro" or t > 22) and not (k == "outro" and t > LINES[-1]["t1"]):
+    if (k != "intro" or t > 2.5) and not (k == "outro" and t > LINES[-1]["t1"]):
         fact_card(ctx, sc, t1, t)
     lyric_panel(ctx, t)
     if t < 1.5:
