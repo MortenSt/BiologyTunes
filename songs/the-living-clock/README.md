@@ -14,7 +14,7 @@ Forensic entomology: how blowfly development, driven by accumulated degree-days,
 | Bridge | Prepupae leave and burrow into soil; Protophormia terraenovae pupates on site through frost and rain |
 | Outro | Puparium opens, adult expands its wings and flies |
 
-The remains are drawn abstractly (non-graphic).
+The carcass is a stylized deer lying on its side (non-graphic).
 
 ## Files
 - `audio.mp3` – the song from Suno

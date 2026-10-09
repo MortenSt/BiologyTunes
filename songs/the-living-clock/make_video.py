@@ -52,7 +52,8 @@ SCENES = [
     ("outro", L(6, 0) - 1.0, "Outro", "Emergence"),
 ]
 FACTS = {
-    "intro": "Forensic entomology uses insects to estimate how long ago a death occurred.",
+    "intro": ("Forensic entomology uses insects to estimate how long ago a death occurred. The same clock "
+              "runs for any carcass in nature, like a deer in the forest."),
     "verse1": ("After death, cells break down (autolysis) and decay releases volatile compounds that blowflies "
                "detect within minutes to hours. Species differ: Lucilia sericata favours sunny, urban sites; "
                "Calliphora vicina shade and cooler weather; C. vomitoria rural woodland."),
@@ -157,14 +158,33 @@ def puparium(ctx, x, y, s=1.0, a=1.0, col=(0.45, 0.25, 0.12), crack=0.0):
 
 
 def host(ctx, x, y, w, a=1.0):
-    """Abstrakt, ikke-grafisk framstilling av levningene (en kappe over en form)."""
-    rgba(ctx, (0.45, 0.42, 0.40), a)
-    ctx.move_to(x - w / 2, y)
-    ctx.curve_to(x - w * 0.4, y - w * 0.28, x + w * 0.25, y - w * 0.32, x + w / 2, y)
+    """Stilisert rådyr som ligger på siden med lukkede øyne. y = bakkenivå, w = lengde."""
+    fur, light, dark = (0.56, 0.39, 0.25), (0.80, 0.68, 0.54), (0.25, 0.17, 0.12)
+    rgba(ctx, (0, 0, 0), 0.25 * a); ellipse(ctx, x, y + 2, w * 0.50, w * 0.035); ctx.fill()   # skygge
+    ctx.set_line_cap(cairo.LINE_CAP_ROUND)
+    for (x0, y0, x1, y1) in ((-0.12, -0.06, -0.30, 0.0), (-0.08, -0.05, -0.24, 0.015),      # forbein
+                             (0.28, -0.07, 0.48, -0.005), (0.30, -0.05, 0.47, 0.015)):     # bakbein
+        rgba(ctx, fur, a); ctx.set_line_width(0.028 * w)
+        ctx.move_to(x + x0 * w, y + y0 * w); ctx.line_to(x + x1 * w, y + y1 * w); ctx.stroke()
+        rgba(ctx, dark, a); ctx.arc(x + x1 * w, y + y1 * w, 0.016 * w, 0, TAU); ctx.fill()     # klauver
+    ctx.set_line_cap(cairo.LINE_CAP_BUTT)
+    rgba(ctx, fur, a); ellipse(ctx, x + 0.08 * w, y - 0.12 * w, 0.30 * w, 0.11 * w); ctx.fill()   # kropp
+    rgba(ctx, light, a); ellipse(ctx, x + 0.08 * w, y - 0.055 * w, 0.24 * w, 0.045 * w); ctx.fill()   # lys buk
+    rgba(ctx, (0.95, 0.93, 0.88), a); ellipse(ctx, x + 0.37 * w, y - 0.15 * w, 0.03 * w, 0.04 * w); ctx.fill()   # hvitt speil
+    rgba(ctx, fur, a)   # hals ned mot hodet som hviler på bakken
+    ctx.move_to(x - 0.17 * w, y - 0.20 * w); ctx.curve_to(x - 0.28 * w, y - 0.16 * w, x - 0.33 * w, y - 0.11 * w, x - 0.38 * w, y - 0.10 * w)
+    ctx.line_to(x - 0.36 * w, y - 0.03 * w); ctx.curve_to(x - 0.28 * w, y - 0.05 * w, x - 0.22 * w, y - 0.06 * w, x - 0.14 * w, y - 0.06 * w)
     ctx.close_path(); ctx.fill()
-    rgba(ctx, (0.6, 0.57, 0.55), 0.6 * a); ctx.set_line_width(2)
-    for k in range(4):
-        ctx.move_to(x - w * 0.3 + k * w * 0.18, y - 4); ctx.curve_to(x - w * 0.25 + k * w * 0.18, y - w * 0.15, x - w * 0.2 + k * w * 0.18, y - w * 0.2, x - w * 0.15 + k * w * 0.18, y - w * 0.22); ctx.stroke()
+    ellipse(ctx, x - 0.41 * w, y - 0.055 * w, 0.075 * w, 0.042 * w); ctx.fill()   # hode
+    rgba(ctx, dark, a); ellipse(ctx, x - 0.475 * w, y - 0.05 * w, 0.014 * w, 0.012 * w); ctx.fill()   # mule
+    for ang, dx in ((-0.7, 0.0), (-0.35, 0.03)):   # ører
+        ctx.save(); ctx.translate(x - (0.36 - dx) * w, y - 0.10 * w); ctx.rotate(ang)
+        rgba(ctx, fur, a); ellipse(ctx, 0, 0, 0.045 * w, 0.016 * w); ctx.fill()
+        rgba(ctx, light, a); ellipse(ctx, 0.005 * w, 0, 0.03 * w, 0.008 * w); ctx.fill()
+        ctx.restore()
+    rgba(ctx, dark, a); ctx.set_line_width(max(1.5, 0.007 * w)); ctx.new_path()
+    ctx.arc(x - 0.415 * w, y - 0.07 * w, 0.016 * w, 0.2, math.pi - 0.2); ctx.stroke()   # lukket øye
+    rgba(ctx, (1, 1, 1), 0.10 * a); ellipse(ctx, x + 0.06 * w, y - 0.19 * w, 0.20 * w, 0.025 * w); ctx.fill()
 
 
 def tree(ctx, x, y, s, col=(0.12, 0.28, 0.18), a=1.0):
@@ -361,10 +381,10 @@ def verse2_scene(ctx, t):
     # egg i et sår/åpning
     ea = smooth((t - li[0] + 0.3) / 0.8)
     for k in range(9):
-        egg(ctx, 250 + (k % 3) * 14, 405 + (k // 3) * 8, 1.6, 0.4, ea * (1 - smooth((t - li[2]) / 1.0)))
+        egg(ctx, 116 + (k % 3) * 11, 432 + (k // 3) * 6, 1.6, 0.4, ea * (1 - smooth((t - li[2]) / 1.0)))
     if ea > 0:
-        text(ctx, "eggs", 270, 380, 16, C["white"], ea * (1 - smooth((t - li[2]) / 1.0)))
-    glow(ctx, 270, 415, 50, (1, 1, 0.9), 0.3 * smooth((t - li[1]) / 0.8) * (1 - smooth((t - li[2]) / 1.0)))
+        text(ctx, "eggs near the eye", 130, 405, 16, C["white"], ea * (1 - smooth((t - li[2]) / 1.0)))
+    glow(ctx, 128, 438, 40, (1, 1, 0.9), 0.3 * smooth((t - li[1]) / 0.8) * (1 - smooth((t - li[2]) / 1.0)))
     # instarer vokser fram til høyre
     rows = [(li[2], "1st instar", 55, 600), (li[3], "2nd instar", 120, 760), (li[4], "3rd instar", 260, 1040)]
     for ts, lab, ln, x in rows:
@@ -429,9 +449,9 @@ def bridge_scene(ctx, t):
     if t > li[4] - 0.3:
         a = smooth((t - li[4] + 0.3) / 0.8)
         for j in range(4):
-            puparium(ctx, 190 + j * 38, gy - 40 - 8 * math.sin(j), 0.55, a, (0.25, 0.20, 0.18))
-        text(ctx, "Protophormia terraenovae", 260, 200, 18, (0.75, 0.85, 1.0), a, bold=True)
-        text(ctx, "pupates on or beside the remains", 260, 224, 15, C["white"], a)
+            puparium(ctx, 225 + j * 36, gy - 64 + 2 * j, 0.5, a, (0.25, 0.20, 0.18))
+        text(ctx, "Protophormia terraenovae", 520, 250, 18, (0.75, 0.85, 1.0), a, bold=True)
+        text(ctx, "pupates on or beside the remains", 520, 274, 15, C["white"], a)
     if cold > 0:   # frost og regn
         for k in range(70):
             p = (t * (0.4 + 0.3 * PTS[k, 2]) + PTS[k, 1]) % 1.0
