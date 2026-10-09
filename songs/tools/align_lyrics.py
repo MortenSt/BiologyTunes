@@ -2,6 +2,7 @@
 
     pip install stable-ts demucs
     python align_lyrics.py "Sangen.wav" lyrics.txt
+    python align_lyrics.py "Sangen (Vocals).wav" lyrics.txt --stem   # med vokalstamme fra Suno (anbefalt)
 
 lyrics.txt: vanlig Suno-tekst. [Seksjon]-overskrifter blir seksjoner, linjer helt i parentes
 (sceneanvisninger) hoppes over, og parenteser inni linjer (korstemmer) fjernes før justering.
@@ -14,14 +15,20 @@ import sys
 
 import stable_whisper
 
-audio = sys.argv[1]
-lyr_path = sys.argv[2] if len(sys.argv) > 2 else "lyrics.txt"
-model_name = sys.argv[3] if len(sys.argv) > 3 else "small"
+STEM = "--stem" in sys.argv          # lyden er allerede en ren vokalstamme -> ingen demucs
+args = [a for a in sys.argv[1:] if a != "--stem"]
+audio = args[0]
+lyr_path = args[1] if len(args) > 1 else "lyrics.txt"
+model_name = args[2] if len(args) > 2 else "small"
 out_dir = os.path.dirname(os.path.abspath(lyr_path))
 
 
 def norm(w):
     return re.sub(r"[^a-z0-9]", "", w.lower().replace("₂", "2").replace("₀", "0"))
+
+
+SECTION_RE = re.compile(r"^(intro|verse|pre-?chorus|chorus|post-?chorus|bridge|outro|hook|refrain|"
+                        r"interlude|instrumental|break|breakdown|drop|coda|final)\b", re.I)
 
 
 def parse(path):
@@ -32,9 +39,10 @@ def parse(path):
             continue
         m = re.match(r"^\[(.+)\]$", line)
         if m:
-            cur = {"label": m.group(1).strip(), "lines": []}
-            secs.append(cur)
-            continue
+            if SECTION_RE.match(m.group(1).strip()):
+                cur = {"label": m.group(1).strip(), "lines": []}
+                secs.append(cur)
+            continue   # andre [..]-linjer er stil/lyd-anvisninger, f.eks. [Male Vocal], [Wind]
         if line.startswith("(") and line.endswith(")"):
             continue   # sceneanvisning
         sung = re.sub(r"\([^)]*\)", "", line).strip()
@@ -43,7 +51,8 @@ def parse(path):
         if cur is None:
             cur = {"label": "Intro", "lines": []}
             secs.append(cur)
-        cur["lines"].append({"text": line, "sung": sung})
+        line = line.replace("*", "")   # *kursiv* i Suno-tekst
+        cur["lines"].append({"text": line, "sung": sung.replace("*", "")})
     return [s for s in secs if s["lines"]]
 
 
@@ -56,12 +65,13 @@ if os.path.exists(CACHE):
 else:
     model = stable_whisper.load_model(model_name)
     kwargs = dict(language="en")
-    try:
-        import demucs  # noqa: F401
-        kwargs["denoiser"] = "demucs"
-        print("Bruker demucs for å isolere vokalen")
-    except ImportError:
-        pass
+    if not STEM:
+        try:
+            import demucs  # noqa: F401
+            kwargs["denoiser"] = "demucs"
+            print("Bruker demucs for å isolere vokalen")
+        except ImportError:
+            pass
     text = "\n".join(l["sung"].replace("₂", "2") for l in all_lines)
     result = model.align(audio, text, **kwargs)
     result.save_as_json(CACHE)
