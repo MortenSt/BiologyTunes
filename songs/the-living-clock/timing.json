@@ -1,0 +1,268 @@
+{
+ "sections": [
+  {
+   "key": "00-verse-1",
+   "label": "Verse 1",
+   "lines": [
+    [
+     24.88,
+     28.83
+    ],
+    [
+     30.88,
+     34.63
+    ],
+    [
+     36.78,
+     39.3
+    ],
+    [
+     39.3,
+     43.43
+    ],
+    [
+     45.76,
+     48.42
+    ],
+    [
+     48.42,
+     52.45
+    ]
+   ],
+   "texts": [
+    "The stillness comes, the cells all break",
+    "A silent call the insects make",
+    "One seeks the city's concrete grey",
+    "One needs the woodland far away",
+    "One loves the sun, one needs the shade",
+    "A different choice for every blade"
+   ],
+   "start": 0.0
+  },
+  {
+   "key": "01-chorus",
+   "label": "Chorus",
+   "lines": [
+    [
+     56.84,
+     60.5
+    ],
+    [
+     60.5,
+     63.74
+    ],
+    [
+     63.74,
+     66.34
+    ],
+    [
+     66.34,
+     69.34
+    ],
+    [
+     69.44,
+     72.4
+    ],
+    [
+     72.4,
+     75.74
+    ]
+   ],
+   "texts": [
+    "Oh, the sun will count the degree days",
+    "In thermal, metabolic haze",
+    "Below the threshold, time will cease",
+    "A frozen, developmental peace",
+    "The instars grow, a living clock",
+    "From egg to fly, we pick the lock"
+   ],
+   "start": 56.84
+  },
+  {
+   "key": "02-verse-2",
+   "label": "Verse 2",
+   "lines": [
+    [
+     81.94,
+     84.86
+    ],
+    [
+     86.84,
+     91.71
+    ],
+    [
+     93.54,
+     96.28
+    ],
+    [
+     96.28,
+     99.6
+    ],
+    [
+     101.9,
+     105.46
+    ],
+    [
+     105.94,
+     109.65
+    ]
+   ],
+   "texts": [
+    "The egg is laid in wound or eye",
+    "A tiny pearl beneath the sky",
+    "The first instar wakes, a hungry start",
+    "The second swells and plays its part",
+    "The third one takes the lion's share",
+    "Growing fat on what is there"
+   ],
+   "start": 80.94
+  },
+  {
+   "key": "03-chorus",
+   "label": "Chorus",
+   "lines": [
+    [
+     113.84,
+     117.5
+    ],
+    [
+     117.5,
+     120.76
+    ],
+    [
+     120.86,
+     123.4
+    ],
+    [
+     123.4,
+     126.34
+    ],
+    [
+     126.34,
+     129.42
+    ],
+    [
+     129.62,
+     133.71
+    ]
+   ],
+   "texts": [
+    "Oh, the sun will count the degree days",
+    "In thermal, metabolic haze",
+    "Below the threshold, time will cease",
+    "A frozen, developmental peace",
+    "The instars grow, a living clock",
+    "From egg to fly, we pick the lock"
+   ],
+   "start": 113.84
+  },
+  {
+   "key": "04-bridge",
+   "label": "Bridge",
+   "lines": [
+    [
+     162.14,
+     166.65
+    ],
+    [
+     168.22,
+     171.76
+    ],
+    [
+     173.84,
+     176.5
+    ],
+    [
+     176.5,
+     181.63
+    ],
+    [
+     183.9,
+     186.26
+    ],
+    [
+     186.96,
+     190.77
+    ]
+   ],
+   "texts": [
+    "The third stage ends, the feeding's done",
+    "Prepupae crawl from the morning sun",
+    "Most dig down deep in earth below",
+    "A quiet place for them to grow",
+    "But Protophormia's young remain",
+    "Upon the host, through frost and rain"
+   ],
+   "start": 162.14
+  },
+  {
+   "key": "05-chorus",
+   "label": "Chorus",
+   "lines": [
+    [
+     194.84,
+     198.46
+    ],
+    [
+     198.46,
+     201.74
+    ],
+    [
+     201.74,
+     204.34
+    ],
+    [
+     204.34,
+     207.36
+    ],
+    [
+     207.42,
+     210.44
+    ],
+    [
+     210.64,
+     213.78
+    ]
+   ],
+   "texts": [
+    "Oh, the sun will count the degree days",
+    "In thermal, metabolic haze",
+    "Below the threshold, time will cease",
+    "A frozen, developmental peace",
+    "The instars grow, a living clock",
+    "From egg to fly, we pick the lock"
+   ],
+   "start": 194.84
+  },
+  {
+   "key": "06-outro",
+   "label": "Outro",
+   "lines": [
+    [
+     219.8,
+     222.32
+    ],
+    [
+     222.32,
+     225.36
+    ],
+    [
+     225.36,
+     228.64
+    ],
+    [
+     230.08,
+     231.6
+    ]
+   ],
+   "texts": [
+    "The pupae wait, a hardened shell",
+    "To break the cycle, break the spell",
+    "A new adult, with wings to dry...",
+    "Ready to fly..."
+   ],
+   "start": 218.8
+  }
+ ],
+ "end": 236.6
+}
