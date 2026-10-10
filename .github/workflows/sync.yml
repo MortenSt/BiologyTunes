@@ -1,35 +1,35 @@
 name: Sync Suno Songs
 on:
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '17 6 * * 1'   # every Monday 06:17 UTC
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-list:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
-          
-      - name: Install Scraper Tools
+          python-version: '3.12'
+
+      - name: Install Playwright
         run: |
           pip install playwright
-          playwright install chromium
-          
-      - name: Scrape Suno
-        run: python scraper.py
-        
-      - name: Commit Updated Data
+          playwright install --with-deps chromium
+
+      - name: Sync from Suno profile
+        run: python sync_suno.py
+
+      - name: Commit updated data
         run: |
           git config --global user.name "MortenSt"
           git config --global user.email "57128178+MortenSt@users.noreply.github.com"
-          git add songs.json
-          git commit -m "Auto-update: Synced songs from Suno" || echo "No changes to commit"
+          git add biologytunes_database_v2.json stats_history.json
+          git commit -m "Auto-update: weekly Suno sync" || echo "No changes to commit"
           git push
