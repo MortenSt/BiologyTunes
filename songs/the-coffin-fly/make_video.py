@@ -247,6 +247,11 @@ def dusk_sky(ctx, t):
     rgba(ctx, (0.92, 0.9, 0.85)); ctx.arc(1050, 160, 34, 0, TAU); ctx.fill()
 
 
+def gravestone(ctx, gy):
+    """Gravstein rett over kista (x = 640), følger bakkenivået når kameraet glir ned."""
+    rgba(ctx, (0.30, 0.30, 0.34)); ctx.move_to(600, gy); ctx.line_to(600, gy - 90); ctx.arc(640, gy - 90, 40, math.pi, 0); ctx.line_to(680, gy); ctx.fill()
+
+
 def intro_scene(ctx, t):
     dusk_sky(ctx, t)
     gy = 430
@@ -254,7 +259,7 @@ def intro_scene(ctx, t):
     for k, x in enumerate((120, 260, 980, 1160)):
         rgba(ctx, (0.06, 0.06, 0.09)); ctx.rectangle(x - 8, gy - 160, 16, 160); ctx.fill()
         ctx.arc(x, gy - 190, 70 + 15 * PTS[k, 0], 0, TAU); ctx.fill()
-    rgba(ctx, (0.30, 0.30, 0.34)); ctx.move_to(600, gy); ctx.line_to(600, gy - 90); ctx.arc(640, gy - 90, 40, math.pi, 0); ctx.line_to(680, gy); ctx.fill()
+    gravestone(ctx, gy)
     soil(ctx, t, gy, 1.0)
     a = smooth((t - 2) / 2) * (1 - smooth((t - 13) / 2))
     if a > 0:
@@ -268,6 +273,7 @@ def verse1_scene(ctx, t):
     sink = smooth((t - li[6]) / 6.0)   # kameraet glir ned under bakken mot slutten
     dusk_sky(ctx, t)
     gy = lerp(430, 120, sink)
+    gravestone(ctx, gy)
     soil(ctx, t, gy, 1.0, rms("Drums", t, 0.1))
     crumbs(ctx, t, gy)
     # stor nærbilde-flue som løper rykkvis på gitarnappene
