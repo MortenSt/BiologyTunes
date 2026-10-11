@@ -293,7 +293,8 @@ def verse1_scene(ctx, t):
 
 
 def underground(ctx, t, depth_top=120, coffin_y=470, show_scent=True, glow_vox=True):
-    bg(ctx, (0.08, 0.06, 0.07), (0.03, 0.02, 0.02))
+    dusk_sky(ctx, t)                 # samme himmel og gravstein som når kameraet glir ned i vers 1
+    gravestone(ctx, depth_top)
     soil(ctx, t, depth_top, 1.0, rms("Drums", t, 0.1))
     crumbs(ctx, t, depth_top)
     gv = rms("Backing Vocals", t, 0.5) if glow_vox else 0
