@@ -22,6 +22,9 @@ The coffin stays closed (non-graphic).
 - **Bass** loudness: the scent plume pulses
 - **Strings/Backing Vocals** loudness: glow
 
+## YouTube
+- `thumbnail.png` (from `make_thumbnail.py`), `youtube-description.md`
+
 ## Files
 - `audio.mp3` – the song from Suno
 - `lyrics.txt` – lyrics (input to `../tools/align_lyrics.py`)
