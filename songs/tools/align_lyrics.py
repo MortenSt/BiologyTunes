@@ -3,6 +3,7 @@
     pip install stable-ts demucs
     python align_lyrics.py "Sangen.wav" lyrics.txt
     python align_lyrics.py "Sangen (Vocals).wav" lyrics.txt --stem   # med vokalstamme fra Suno (anbefalt)
+    python align_lyrics.py "Sangen (Vocals).wav" lyrics.txt --transcribe   # hva synges faktisk? (feilsøking)
 
 lyrics.txt: vanlig Suno-tekst. [Seksjon]-overskrifter blir seksjoner, linjer helt i parentes
 (sceneanvisninger) hoppes over, og parenteser inni linjer (korstemmer) fjernes før justering.
@@ -16,7 +17,8 @@ import sys
 import stable_whisper
 
 STEM = "--stem" in sys.argv          # lyden er allerede en ren vokalstamme -> ingen demucs
-args = [a for a in sys.argv[1:] if a != "--stem"]
+TRANSCRIBE = "--transcribe" in sys.argv   # skriv ut hva Whisper faktisk hører (for å finne tekstavvik)
+args = [a for a in sys.argv[1:] if not a.startswith("--")]
 audio = args[0]
 lyr_path = args[1] if len(args) > 1 else "lyrics.txt"
 model_name = args[2] if len(args) > 2 else "small"
@@ -55,6 +57,18 @@ def parse(path):
         cur["lines"].append({"text": line, "sung": sung.replace("*", "")})
     return [s for s in secs if s["lines"]]
 
+
+if TRANSCRIBE:
+    model = stable_whisper.load_model(model_name)
+    res = model.transcribe(audio, language="en")
+    base = os.path.join(os.path.dirname(os.path.abspath(lyr_path)), "transcript")
+    with open(base + ".txt", "w", encoding="utf-8") as f:
+        for seg in res.segments:
+            m, s_ = divmod(seg.start, 60)
+            f.write(f"{int(m)}:{s_:05.2f}  {seg.text.strip()}\n")
+    res.to_srt_vtt(base + ".srt")
+    print("Ferdig: transcript.txt og transcript.srt – last dem opp, så sammenligner jeg med teksten")
+    sys.exit(0)
 
 secs = parse(lyr_path)
 all_lines = [l for s in secs for l in s["lines"]]
