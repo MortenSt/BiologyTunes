@@ -625,7 +625,7 @@ def scene_chorus(ctx, t, key):
         for i, k in enumerate(order):
             h[k] = smooth(clamp(pj * 5 - i)) * (1 - smooth((t - L[2]["e1"] - 0.3) / 0.8))
     if key == "ch2":
-        egg = (1, 1 - ((t - L[0]["t0"]) / 6.0) % 1.0)
+        egg = (1, ((t - L[0]["t0"]) / 6.0) % 1.0)   # fra fimbriene mot livmora
     else:
         egg = None
     internal(ctx, 790, 290, 1.05, t, h, a=1.0, labels=dict(ALL_INT), egg=egg, pulse=1)
