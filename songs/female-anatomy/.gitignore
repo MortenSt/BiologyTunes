@@ -1,0 +1,3 @@
+preview_*.png
+__pycache__/
+alignment.json
