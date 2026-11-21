@@ -1,4 +1,4 @@
-"""Weekly sync of the public @biology_tunes Suno profile into biologytunes_database_v2.json.
+"""Daily sync of the public @biology_tunes Suno profile into biologytunes_database_v2.json.
 
 - Updates play/like counts and missing metadata for existing songs.
 - Adds newly published songs (classification fields get defaults and
@@ -171,7 +171,7 @@ def main():
     db["metadata"]["last_synced"] = now
     if added:
         db["metadata"].setdefault("sync_notes", []).append(
-            f"{now[:10]}: Weekly sync added {len(added)} songs: {', '.join(added)}")
+            f"{now[:10]}: Daily sync added {len(added)} songs: {', '.join(added)}")
 
     with open(DB_PATH, "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, indent=2)

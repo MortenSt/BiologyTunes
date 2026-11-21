@@ -290,7 +290,7 @@ td a { color: inherit; }
       svg.appendChild(hit);
     });
     host.appendChild(svg);
-    $('trendNote').textContent = hist.length < 4 ? 'Kurven fylles ut etter hvert som den ukentlige synken kjører.' : '';
+    $('trendNote').textContent = hist.length < 4 ? 'Kurven fylles ut etter hvert som den daglige synken kjører.' : '';
   }
 
   function renderMonthly(list) {
@@ -421,7 +421,12 @@ td a { color: inherit; }
   ]).then(function (res) {
     var db = res[0];
     hist = (res[1].snapshots || []).slice().sort(function (a, b) { return a.date.localeCompare(b.date); });
-    if (hist.length >= 2) { prevMap = hist[hist.length - 2].per_song || {}; prevDate = hist[hist.length - 2].date; }
+    if (hist.length >= 2) {
+      // Sync runs daily: compare with the latest snapshot at least 7 days older than the newest one.
+      var last = new Date(hist[hist.length - 1].date), base = hist[0];
+      for (var i = hist.length - 2; i >= 0; i--) { if ((last - new Date(hist[i].date)) / 864e5 >= 7) { base = hist[i]; break; } }
+      prevMap = base.per_song || {}; prevDate = base.date;
+    }
     all = db.songs.map(function (s) {
       var plays = s.play_count || 0, prev = prevMap[s.id];
       return {
