@@ -532,16 +532,20 @@ function buildCharts(data) {
   });
 
   // Model version
-  const modelOrder = ['v3','v3.5','v4','v4.5','v4.5+','v5','v5.5'];
   const modelCounts = {};
   data.forEach(s => { modelCounts[s.model_version] = (modelCounts[s.model_version]||0) + 1; });
-  const modelLabels = modelOrder.filter(m => modelCounts[m]);
+  // Sort by version number so new Suno models (v6, v6-mini, v7, ...) appear automatically.
+  const modelKey = m => { const n = String(m).match(/\d+(\.\d+)?/); return [n ? parseFloat(n[0]) : 999, String(m)]; };
+  const modelLabels = Object.keys(modelCounts).sort((a, b) => {
+    const [na, sa] = modelKey(a), [nb, sb] = modelKey(b);
+    return na - nb || sa.length - sb.length || sa.localeCompare(sb);
+  });
   if (chartModel) chartModel.destroy();
   chartModel = new Chart(document.getElementById('chartModel'), {
     type: 'bar',
     data: {
       labels: modelLabels,
-      datasets: [{ data: modelLabels.map(m => modelCounts[m]||0), backgroundColor: modelLabels.map((_,i) => `hsl(${210+i*15},65%,${55-i*4}%)`), borderRadius: 5, borderSkipped: false }]
+      datasets: [{ data: modelLabels.map(m => modelCounts[m]||0), backgroundColor: modelLabels.map((_,i) => `hsl(${210+i*(120/Math.max(modelLabels.length-1,1))},65%,${58-i*(24/Math.max(modelLabels.length-1,1))}%)`), borderRadius: 5, borderSkipped: false }]
     },
     options: {
       responsive: true, maintainAspectRatio: false,
