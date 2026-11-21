@@ -6,7 +6,7 @@
     "original_export": "2026-03-26T18:35:58.929Z",
     "total_songs": 263,
     "schema_version": "2.0",
-    "last_synced": "2026-11-16T15:49:25.000Z",
+    "last_synced": "2026-11-14T20:52:27.000Z",
     "tags_topics_backfilled": "2026-06-19",
     "tags_topics_method": "lyric-based (5 parallel agents)",
     "sync_notes": [
@@ -26,7 +26,7 @@
       "2026-11-20: Added song 043 \"Lean Season\" (53cb1015), album \"Cost of Living\" (track 10), from Suno clip data (audio-retrieve) + Owners Inbox delivery. Public clip only (private test takes A-H not added). play_count/upvote_count of existing songs NOT refreshed (last full sync 2026-11-14). Script: Teams/DataEngineer/output/add_song_043_2026-11-20.py",
       "2026-11-21: Added song 045 \"Powerhouse?\" (7e6646f4), album \"Cost of Living\" (track 12), from Suno clip data + Owners Inbox delivery. Public clip only (private test takes A, C-H not added). play_count/upvote_count of existing songs NOT refreshed (last full sync 2026-11-14). Script: Teams/DataEngineer/output/add_song_045_2026-11-21.py",
       "2026-11-21: Added song 046 \"The Verdict\" (d9dcd0de), album \"Cost of Living\" (track 13), from Suno clip data + Owners Inbox delivery. Public clip only (private test takes A, B, C, D, A2 not added). play_count/upvote_count of existing songs NOT refreshed (last full sync 2026-11-14). Script: Teams/DataEngineer/output/add_song_046_2026-11-21.py",
-      "2026-11-21: Published working catalog to GitHub Pages (263 songs; adds 11 Cost of Living songs + curated classifications/tags_topics). play_count/upvote_count kept from weekly site sync where higher (24 values)."
+      "2026-11-21: Reclassified all 41 songs with primary_theme \"other\" (owner approved). 25 moved to existing themes; 5 new themes introduced: plants_photosynthesis (4), immunology (4), norwegian_songs (4), math_physics (2), instrumental_covers (2). New primary removed from secondary_themes where present (4 songs). is_biology set to true for 7 songs (I am the very model of a modern molecular biologist V1, If I was God ...(I'd redesign), Ages of Life, Eternal Dance, Songbird, The Compass Inside, Liquefy). No song has primary_theme \"other\" any more. Backup: biologytunes_database_v2.json.pre-theme-reclass-2026-11-21.backup. Script: Teams/DataEngineer/output/reclassify_other_themes_2026-11-21.py"
     ]
   },
   "artist": {
@@ -236,11 +236,11 @@
       "musical_genre": [
         "unclassified"
       ],
-      "primary_theme": "other",
+      "primary_theme": "genetics_molecular_biology",
       "secondary_themes": [
         "cell_biology"
       ],
-      "is_biology": false,
+      "is_biology": true,
       "humor_level": "playful",
       "academic_level": "popular",
       "caption": "Inspired  by  \"Modern Major-General,\" this track celebrates the exhaustive knowledge required in modern biology! It showcases expertise in the Central Dogma (DNA → RNA → Protein), techniques like CRISPR-Cas gene editing, qPCR for quantifying RNA, and Western Blots for protein analysis. From signal transduction cascades to battling Reviewer #2, this is a humorous tribute to the highly specialized—and yet surprisingly broad—field of Molecular Biology. #MolecularBiology #CRISPR #ScienceMusic #",
@@ -392,11 +392,11 @@
         "rock",
         "progressive"
       ],
-      "primary_theme": "other",
+      "primary_theme": "evolution_natural_selection",
       "secondary_themes": [
         "parasitology_disease"
       ],
-      "is_biology": false,
+      "is_biology": true,
       "humor_level": "serious",
       "academic_level": "popular",
       "caption": "This song critiques \"intelligent design\" by highlighting biological \"flaws\" as evidence of evolution. It cites examples like cruel parasitism (wasps, Guinea worms), vestigial structures (whale legs, blind cave fish eyes), inefficient anatomical paths (recurrent laryngeal nerve), and even cancer. The lyrics conclude these \"errors\" reflect a system shaped by natural selection and genetic mutation, not perfect creation. #Evolution #BadDesign #NaturalSelection #Biology",
@@ -1393,7 +1393,7 @@
         "pop",
         "indie"
       ],
-      "primary_theme": "other",
+      "primary_theme": "pop_culture",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "playful",
@@ -1465,7 +1465,7 @@
       "musical_genre": [
         "blues"
       ],
-      "primary_theme": "other",
+      "primary_theme": "pop_culture",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "playful",
@@ -3907,7 +3907,7 @@
       "musical_genre": [
         "rock"
       ],
-      "primary_theme": "other",
+      "primary_theme": "norwegian_songs",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "serious",
@@ -3943,7 +3943,7 @@
         "folk",
         "acoustic"
       ],
-      "primary_theme": "other",
+      "primary_theme": "instrumental_covers",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "serious",
@@ -4202,11 +4202,11 @@
         "pop",
         "indie"
       ],
-      "primary_theme": "other",
+      "primary_theme": "evolution_natural_selection",
       "secondary_themes": [
         "origin_of_life"
       ],
-      "is_biology": false,
+      "is_biology": true,
       "humor_level": "serious",
       "academic_level": "popular",
       "caption": "This instrumental track captures the grand, sweeping narrative of Evolutionary History. It spans the immense timescale from the origin of single-celled life in the ancient seas to the rise and fall of major groups, such as the dinosaurs and the subsequent age of mammals. The song emphasizes that every fossil and every creature today holds a part of this continuous, ever-changing story of adaptation and transformation. #EvolutionaryHistory #Paleontology #Adaptation #Biology",
@@ -5263,7 +5263,7 @@
         "country",
         "acoustic"
       ],
-      "primary_theme": "other",
+      "primary_theme": "pop_culture",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "serious",
@@ -5414,7 +5414,7 @@
       "musical_genre": [
         "electronic"
       ],
-      "primary_theme": "other",
+      "primary_theme": "norwegian_songs",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "serious",
@@ -5450,7 +5450,7 @@
         "classical",
         "indie"
       ],
-      "primary_theme": "other",
+      "primary_theme": "school_social",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "serious",
@@ -5641,7 +5641,7 @@
         "rock",
         "pop"
       ],
-      "primary_theme": "other",
+      "primary_theme": "math_physics",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "serious",
@@ -5992,7 +5992,7 @@
       "musical_genre": [
         "blues"
       ],
-      "primary_theme": "other",
+      "primary_theme": "seasonal_holiday",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "playful",
@@ -6060,7 +6060,7 @@
       "musical_genre": [
         "folk"
       ],
-      "primary_theme": "other",
+      "primary_theme": "norwegian_songs",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "serious",
@@ -6128,7 +6128,7 @@
       "musical_genre": [
         "unclassified"
       ],
-      "primary_theme": "other",
+      "primary_theme": "instrumental_covers",
       "secondary_themes": [
         "neurobiology_behavior"
       ],
@@ -6569,7 +6569,7 @@
       "musical_genre": [
         "rock"
       ],
-      "primary_theme": "other",
+      "primary_theme": "norwegian_songs",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "serious",
@@ -6603,11 +6603,11 @@
       "musical_genre": [
         "pop"
       ],
-      "primary_theme": "other",
+      "primary_theme": "evolution_natural_selection",
       "secondary_themes": [
         "genetics_molecular_biology"
       ],
-      "is_biology": false,
+      "is_biology": true,
       "humor_level": "serious",
       "academic_level": "popular",
       "tags_topics": [
@@ -6994,7 +6994,7 @@
       "musical_genre": [
         "unclassified"
       ],
-      "primary_theme": "other",
+      "primary_theme": "pop_culture",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "serious",
@@ -7140,11 +7140,11 @@
       "musical_genre": [
         "unclassified"
       ],
-      "primary_theme": "other",
+      "primary_theme": "neurobiology_behavior",
       "secondary_themes": [
         "taxonomy_species"
       ],
-      "is_biology": false,
+      "is_biology": true,
       "humor_level": "serious",
       "academic_level": "popular",
       "display_tags": "contemporary classical, experimental, ambient",
@@ -7252,7 +7252,7 @@
       "musical_genre": [
         "unclassified"
       ],
-      "primary_theme": "other",
+      "primary_theme": "pop_culture",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "serious",
@@ -7367,7 +7367,7 @@
       "musical_genre": [
         "jazz"
       ],
-      "primary_theme": "other",
+      "primary_theme": "math_physics",
       "secondary_themes": [],
       "is_biology": false,
       "humor_level": "serious",
@@ -8170,10 +8170,8 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "dark post-punk, gothic rock, 110 BPM, locked drum machine pattern, overdriven bass lead, single-note angular guitar, minor key, close-mic dark female vocals, low register, cold and controlled delivery, no warm reverb, dry mix, tension without release, haunting and mechanical, insect warfare, chemical compulsion, bridge shifts to aggressive faster tempo with brighter distorted guitar, alarm pheromone chorus, visceral urgency",
-      "primary_theme": "other",
-      "secondary_themes": [
-        "neurobiology_behavior"
-      ],
+      "primary_theme": "neurobiology_behavior",
+      "secondary_themes": [],
       "is_biology": true,
       "humor_level": "none",
       "academic_level": "unknown",
@@ -8209,7 +8207,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "pop rock, military drums, marching band, male vocals, energetic, anthemic, snare rolls, brass accents, 130 bpm",
-      "primary_theme": "other",
+      "primary_theme": "immunology",
       "secondary_themes": [
         "cell_biology",
         "genetics_molecular_biology"
@@ -8250,7 +8248,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "desert blues-rock, slide guitar, dusty groove, driving drums, gritty male vocals, Hammond organ, 96 bpm, sun-baked, resilient",
-      "primary_theme": "other",
+      "primary_theme": "plants_photosynthesis",
       "secondary_themes": [
         "ecology_symbiosis"
       ],
@@ -8289,10 +8287,8 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "indie folk-pop, warm, building, acoustic guitar, piano, brushed drums, male lead with female harmony, group vocals on final chorus, 100 bpm, hopeful, spacious",
-      "primary_theme": "other",
-      "secondary_themes": [
-        "evolution_natural_selection"
-      ],
+      "primary_theme": "evolution_natural_selection",
+      "secondary_themes": [],
       "is_biology": true,
       "humor_level": "none",
       "academic_level": "unknown",
@@ -8328,7 +8324,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "indie folk, anthemic, building, acoustic guitar, stomp-clap percussion, warm male vocals, group backing vocals on chorus, banjo, 92 bpm, hopeful, cinematic",
-      "primary_theme": "other",
+      "primary_theme": "evolution_natural_selection",
       "secondary_themes": [
         "taxonomy_species"
       ],
@@ -8366,7 +8362,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "funk, pop, educational, upbeat, rhythmic",
-      "primary_theme": "other",
+      "primary_theme": "ecology_symbiosis",
       "secondary_themes": [
         "biochemistry_metabolism"
       ],
@@ -8405,7 +8401,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "indie pop, educational, upbeat, catchy, acoustic guitar, male vocals, metaphorical, science-driven, 105 bpm\n",
-      "primary_theme": "other",
+      "primary_theme": "plants_photosynthesis",
       "secondary_themes": [
         "ecology_symbiosis"
       ],
@@ -8444,7 +8440,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "Uplifting Alternative/Pop-Rock with orchestral and electronic elements.\nTempo: 130 BPM, 4/4 time.\nKey: Major key (C, G, or D major recommended).\nMood: Triumphant, awe-struck, spiritual—celebratory, not dark or playful.\n```\n",
-      "primary_theme": "other",
+      "primary_theme": "plants_photosynthesis",
       "secondary_themes": [
         "ecology_symbiosis"
       ],
@@ -8483,7 +8479,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "cinematic doom, dark orchestral, slow burn, 62 BPM, 4/4, minor key, cello ostinato, solo piano, string quartet, double bass, military snare on chorus only, sparse brushed percussion, full orchestral swell on chorus, near silence pre-chorus, stripped final chorus, heartbeat pulse intro, cello alone outro, fade to silence, no resolution, male vocals, baritone, low register recitative pre-chorus, melancholic, tragic, austere, post-romantic orchestral, cinematic",
-      "primary_theme": "other",
+      "primary_theme": "cell_biology",
       "secondary_themes": [
         "genetics_molecular_biology",
         "evolution_natural_selection"
@@ -8524,7 +8520,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "dark chamber pop, cold atmospheric, slow 54 bpm, female mezzo vocals, close-mic intimate, minor key, sparse piano, mournful cello, hydraulic sub-bass texture, reversed string pad, brushed minimal percussion, no drum kit, no drums, distant low pulse, near-silence bridge, cold reverb, analog warmth, European dark pop, night stillness, unhurried, botanical, patient, interior",
-      "primary_theme": "other",
+      "primary_theme": "plants_photosynthesis",
       "secondary_themes": [
         "ecology_symbiosis"
       ],
@@ -8563,10 +8559,8 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "dark electronica, art-pop, 68 BPM, analog synth pad, cold synth textures, deep sub-bass, sparse reverb percussion, gated snare, tape saturation, plate reverb, close-mic spoken vocals, robotic spoken delivery, close-mic intimate verses, full chorus drop, subtractive bridge, unresolved outro, clinical precision",
-      "primary_theme": "other",
-      "secondary_themes": [
-        "parasitology_disease"
-      ],
+      "primary_theme": "parasitology_disease",
+      "secondary_themes": [],
       "is_biology": true,
       "humor_level": "none",
       "academic_level": "unknown",
@@ -8602,7 +8596,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "sacred choral hymn, Anglican cathedral, SATB choir, mixed boys choir and adult choir, solo tenor lead, pipe organ, string quartet, double bass, harp, no drums, hand bells on bridge only, 76 bpm, 6/8 time feel, D major modal Lydian touch, reverent, luminous, architectural, Lauridsen-like harmony, Whitacre cluster chords, real cathedral reverb, natural room sound, no compression, no claps\n\n**Voice:** Ny \"Cantor\" (lyrisk tenor, gutteaktig, behersket) + SATB-kor med fremhevet guttediskant på hooken.\n**Tempo/toneart:** 76 BPM, 6/8, D-dur med Lydian-løft på \"spires of fire\". Halvtonemodulasjon (D→Eb) på siste \"Worm and wing and womb and wonder\".\n\n---\n\n",
-      "primary_theme": "other",
+      "primary_theme": "evo_devo",
       "secondary_themes": [
         "genetics_molecular_biology",
         "evolution_natural_selection"
@@ -8643,10 +8637,8 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "doom gospel, slow hymn, dark cathedral folk, baritone male lead vocal, gospel choir backing, pipe organ, cello, double bass, sub bass drone, sparse funeral drums, tambourine on chorus, 72 bpm, 6/8 time feel, reverent, liturgical, macabre, cinematic, underwater reverb, wet plate reverb, analog warmth\n",
-      "primary_theme": "other",
-      "secondary_themes": [
-        "anatomy_physiology"
-      ],
+      "primary_theme": "anatomy_physiology",
+      "secondary_themes": [],
       "is_biology": true,
       "humor_level": "none",
       "academic_level": "unknown",
@@ -8682,9 +8674,9 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "cinematic folk, orchestral indie, acoustic fingerpicking, sparse arrangement, slow build, 56 BPM, fingerpicked acoustic guitar, cello, string ensemble, warm pad, harmonic overtones, intimate close-mic vocals, spoken bridge, hushed vocals, no percussion, sustained tones, wide reverb, tender, vast and intimate, female vocals",
-      "primary_theme": "other",
+      "primary_theme": "neurobiology_behavior",
       "secondary_themes": [],
-      "is_biology": null,
+      "is_biology": true,
       "humor_level": "none",
       "academic_level": "unknown",
       "caption": "A bird crosses a continent in the dark.No map. No instrument. No explanation.Just a quantum reaction in the retina —and the certain knowledge of home.🧭 The Compass Inside | BiologyTunes",
@@ -8720,9 +8712,9 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "art pop, chamber music, ambient, minimalist, cinematic, 62 BPM, sparse piano, string pad, cello, music box, close-mic vocals, intimate, slow build, whispered bridge, no drums, heartbeat pulse, crystalline, electroacoustic textures, fragile, organic ambient texture, distant breath",
-      "primary_theme": "other",
+      "primary_theme": "evo_devo",
       "secondary_themes": [],
-      "is_biology": null,
+      "is_biology": true,
       "humor_level": "none",
       "academic_level": "unknown",
       "caption": "Inside a chrysalis, a caterpillar doesn't transform — it dissolves. Most of its body breaks down into liquid, then rebuilds itself from cells that were waiting since before it had a name.And somehow, through all of it — the memory survives.🧬 Liquefy | BiologyTunes",
@@ -8757,7 +8749,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "chamber pop, dark art pop, piano ballad, atmospheric, string quartet, melancholic male tenor, reverb-heavy vocals, minor key, 80 bpm, sparse production, cinematic, introspective, layered harmonies on chorus, serious, literary\n\n",
-      "primary_theme": "other",
+      "primary_theme": "immunology",
       "secondary_themes": [],
       "is_biology": true,
       "humor_level": "none",
@@ -8794,7 +8786,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "cinematic indie folk, epic, orchestral swells, fingerpicked acoustic guitar, cello, sparse piano, haunting male baritone, slow build, 72 bpm, melancholic, ancient, cosmic, storytelling, atmospheric strings, dynamic crescendo, serious\n",
-      "primary_theme": "other",
+      "primary_theme": "immunology",
       "secondary_themes": [],
       "is_biology": true,
       "humor_level": "none",
@@ -8832,7 +8824,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "cinematic dark electronic, epic orchestral, industrial, abrasive industrial rock, harsh distorted synth, mechanical percussion, haunting vinyl-textured atmosphere, epic orchestral swells, massive brass sections, tension-building strings, male vocals, baritone, ominous, haunting, sparse intro, explosive chorus, cold precise bridge, minor key, pulsing synth bass, distorted percussion, orchestral strings, brass swells, 85 bpm verses, 100 bpm chorus, dynamic shifts, noir atmosphere, dramatic\n",
-      "primary_theme": "other",
+      "primary_theme": "immunology",
       "secondary_themes": [
         "cell_biology",
         "anatomy_physiology"
@@ -8872,7 +8864,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "indie folk, acoustic ballad, 75 bpm, minor key, male vocals, melancholic, fingerpicked acoustic guitar, sparse percussion, subtle cello, intimate room reverb, dry wit, understated, narrative, quiet building chorus\n",
-      "primary_theme": "other",
+      "primary_theme": "anatomy_physiology",
       "secondary_themes": [
         "biochemistry_metabolism",
         "cell_biology"
@@ -8912,7 +8904,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "dark folk, gothic americana, deep male vocals, acoustic guitar, cello, minor key, atmospheric, storytelling, 85 bpm\n\n",
-      "primary_theme": "other",
+      "primary_theme": "decomposition_forensic_entomology",
       "secondary_themes": [
         "entomology_invertebrates",
         "ecology_symbiosis"
@@ -8954,7 +8946,7 @@
       "version_group": null,
       "is_primary_version": true,
       "musical_genre": "piano ballad, orchestral swells, melancholic, cinematic, male vocals, emotional, slow tempo, strings, 70 bpm",
-      "primary_theme": "other",
+      "primary_theme": "cell_biology",
       "secondary_themes": [
         "genetics_molecular_biology",
         "anatomy_physiology"
